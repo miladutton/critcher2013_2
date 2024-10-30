@@ -57,3 +57,4 @@ rsconnect/
 *_files/
 # html files (output by Quarto)
 *.html
+.DS_Store
