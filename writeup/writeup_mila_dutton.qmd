@@ -1,0 +1,160 @@
+---
+title: "Replication of Study 'How Quick Decisions Illuminate Moral Character' by Critcher et al. (2013, Social Psychological and Personality Science)"
+author: "Mila Dutton (midutton@ucsd.edu)"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+format:
+  pdf:
+    toc: true
+    toc_depth: 3
+---
+
+<!-- Replication reports should all use this template to standardize reporting across projects.  These reports will be public supplementary materials that accompany the summary report(s) of the aggregate results. -->
+
+## Introduction
+
+This paper examines how the speed in making moral decisions can shape how others view as, as well as how we assess our own actions.This is a topic that has always been fascinating to me, especially as a psychology undergrad major, with experience researching cognition. The intersection between decision making and moral cognition touches on the core psychological questions regarding ethics, thought process, and social environments.
+
+The experiment will follow the structure of the original study by having participants read stories regarding making moral decisions at varying speeds. In experiment 1, two men find separate wallets in a parking lot. One man immediately decides what to do with the wallet while the other decides after a "long and careful deliberation". In the moral condition, both men turn the wallet in, and in the immoral decision both men keep the wallet. Participants are then given questionnaires in which they rank the following sets: quickness, moral character evaluation, certainty, and emotional impulsivity. Experiment 2 follows a similar structure but is between subjects. The story depicts a single mother who is struggling to afford her son. Her boss offers to adopt her son and in return will triple her salary. She is described as either taking 3 seconds or 3 days to come to a decision, and her decision was independently varied. Participants will then use the same scales as well as two additional scales in which they rank her motives to "get more money" and "protect her child". In our study, we will only be replicating experiment 2. A two way ANOVA test was run to assess decision speed and type of decision, and a regression analysis was run to further explore relationships between certainty and morality.
+
+A potential challenge will be the choice of wording. I was not able to find access to their actual stories, or the questionnaires given to participants. In these types of studies choices in wording, grammar, and tone can have a large impact on participant reaction. In order to be a sufficient replication, it is crucial to have minimal variance between stimuli. Additionally, I do not have experience with this type of data analysis so it will definitely be a learning curve. I am confident in my ability to learn, but I am sure it will take a bit to feel confident doing so.
+
+[Repository](https://github.com/ucsd-psych201a/critcher2013_2)
+
+[Original Paper](https://drive.google.com/file/d/182sSzaaCkCtBFzJWphGbDNWhHVsF7vaM/view)
+
+## Methods
+
+### Power Analysis
+
+Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size. Considerations of feasibility for selecting planned sample size.
+
+The original study utilizes a series of analyses to determine whether decision speed impacts moral character perception.
+
+-   **Decision on Moral Character:** A strong main effect of decision type with a high F-value (F(1, 551) = 402.22, p \< .001).
+
+-   **Decision and Speed on Moral Character:** There was a moderate to large effect size on the influence of speed (F(1, 549) = 16.08, p \< .001), indicating that quick immoral decisions lead to more negative character perception, and vice versa.
+
+-   **Certainty as a Mediator:** Certainty was a mediator between decision speed and character perception, with faster decisions linked to higher certainty ratings (Sobel test: *z* = 6.56, *p* \< .001) with a medium to large effect size.
+
+-   **Motive Strength:** There was a moderate to large effect size decision speed and type influencing perceived motives (F(1, 541) = 51.07, p \< .001).
+
+Power analyses will be employed to determine the sample sizes needed to achieve 80%, 90%, 95% power for detecting effect sizes from the original study.
+
+While the original study had 553 participants in experiment 2, ours will likely have less for a number of reasons.
+
+-   **Funding:** Due to limited funding, and the importance of fairly compensating participants, we will have a smaller sample size than the original study.
+
+-   **Dropout Rate:** To account for participants potentially not completing the study, we will aim to start with a larger sample size.
+
+-   **Quality of Data:** To ensure we have enough good quality data, again we will aim to start with a larger sample size. If participants fail attention checks we can discard their data while still having enough good quality data.
+
+-   **Participant Recruitment**: The availability of the target population may influence our recruitment ability, potentially impacting our planned sample size.
+
+### Planned Sample
+
+Based on the original studies findings, we plan to have a sample size of approximately **FILL IN** participants. This sample size will take into account fair compensation, dropout rate, and ensuring high quality data. Our study will implement a termination rule based on the time constraints. As we have just over a month to complete this study, if we do not meet our ideal sample size by **ADD DATE**, we will still stop recruitment to ensure adequate time for data analysis.
+
+The sampling frame will consist of individuals in the participant pool on the website Prolific. As in line with the original study, participants will mostly be students in higher education, however it will not be specific to region. The original study did not state any demographic information, however we will collect data such as age and gender. No preselection rules will apply.
+
+### Materials
+
+Participants in this study were presented with a story focusing on a character named Pamela, as outlined in the original article. The story was structured as follows.
+
+"Pamela, a financially struggling mother, worked for Mr. Muir, a wealthy bachelor who showed unusual interest in her son, Alan, by taking him on outings and giving him expensive gifts. The scenario was crafted to make Mr. Muir’s intentions ambiguous, which caused Pamela to suspect his motives. At one point, Mr. Muir proposed to Pamela that he wanted to adopt Alan and offered to triple her salary if she agreed."
+
+This between subjects design allows for manipulation of decision speed and moral decision. Participants were randomly assigned to learn that Pamela either took "3 seconds (quick)" or "3 days (slow)" to decide. Whether she chose to keep or sell Alan was also randomly assigned.
+
+After reading the story participants were presented with follow up questions which were to be ranked on a 7 point scale. The questions are as follows, and were taken directly from the original study.
+
+-   **Quickness**:
+
+    -   "As a manipulation check, participants indicated how quickly (vs. slowly) the decision was made"
+
+-   **Moral Character Evaluation**:
+
+    -   "The three moral evaluation items had participants assess the agents’ underlying moral principles and standards... by asking whether the agent: “has entirely good (vs. entirely bad) moral principles,” “has good (vs. bad) moral standards,” and “deep down has the moral principles and knowledge to do the right thing"."
+
+-   **Certainty**:
+
+    -   "Participants indicated “how conflicted she felt when making her decision” (reverse-scored), “how many reservations she had” (reverse-scored), whether the target “was quite certain in her decision” (vs. had considerable reservations), and “how far she was from choosing the alternate course of action"."
+
+-   **Emotional impulsivity**:
+
+    -   "Participants indicated to what extent the person remained “calm and emotionally contained” (reverse-scored) and “became upset and acted without thinking.""
+
+-   **Perceived Motives**:
+
+    -   "...participants rated Pamela’s motives to: “get more money” and 'protect her children"."
+
+### Procedure
+
+Participants began by reading the story about Pamela and her moral decision. Following a between subjects design, they each read only one story, randomly assigned into one of the following groups:
+
+1.  Quick decision, accepted offer.
+2.  Quick decision, rejected offer.
+3.  Slow decision, accepted offer.
+4.  Slow decision, rejected offer.
+
+After reading the story, they were presented with the questions which they ranked on a scale from 1-7 regarding their feelings toward Pamela and her decision. An attention check was also added to the end of the questions, to ensure that participants were present in the study. The order of presenting the decision speed and moral outcome was randomized to reduce order effects.
+
+### Analysis Plan
+
+To begin analysis, we cleaned the data by excluding participants with missing data. A t-test was performed to assess the manipulation check, making sure participants recognized the difference between a slow and fast decision. If participants failed the check, their data would also be excluded.
+
+The key analysis of interest is the effect of decision speed and decision type on moral character evaluation. This analysis will help to confirm if the original findings (that moral judgments are influenced by both the speed of Pamela’s decision and her choice) are replicable in our sample. As in the original study, we will include perceived certainty as a covariate, which was shown to mediate the relationship between decision speed and moral judgment.
+
+### Differences from Original Study
+
+The main difference from the original study is that we performed one experiment rather than two. Specifically, we replicated experiment 2, as it incorporated key procedural changes that enhanced the study’s design.
+
+Our participant pool is also different. The original paper included mainly undergraduate students at UC Berkeley, as well as members from the surrounding community. As we are not a part of that institution, our participants are not from that community. We conducted our study entirely online, unlike the original study, which did not specify whether participants were tested in a lab or online. Using Prolific, we did not impose any regional restrictions, which meant we couldn’t control the exact environment in which participants completed the study. Lastly, we added an attention check at the end of the questions which the original study did not have. This was to ensure that participants were not just clicking through, and to help minimize bots. These differences are not expected to make a difference in obtaining the effect.
+
+### Methods Addendum (Post Data Collection)
+
+You can comment this section out prior to final report with data collection.
+
+#### Actual Sample
+
+Sample size, demographics, data exclusions based on rules spelled out in analysis plan
+
+#### Differences from pre-data collection methods plan
+
+Any differences from what was described as the original plan, or “none”.
+
+## Results
+
+### Data preparation
+
+To prepare the dataset for analysis, we will begin by thoroughly cleaning the data. Entries with missing values will be removed to maintain data integrity. Additionally, any responses that did not pass attention checks will be excluded to ensure high data quality. Outliers will be identified and assessed; if they prove to be problematic they will also be removed. After these steps, we will ensure the dataset is correctly formatted, providing a solid foundation for the analysis phase.
+
+```{r include=F}
+### Data Preparation
+
+#### Load Relevant Libraries and Functions
+
+#### Import data
+
+#### Data exclusion / filtering
+
+#### Prepare data for analysis - create columns etc.
+```
+
+### Confirmatory analysis
+
+The main effect analysis was performed using a two-way ANOVA test. This analysis examined the main effects of decision type (whether participants accepted or rejected Mr. Muir's offer), and decision speed (slow or quick) on the perceived moral character evaluation. This analysis allowed for observation of how how these factors independently influenced moral evaluations.
+
+*Side-by-side graph with original graph is ideal here*
+
+### Exploratory analyses
+
+Any follow-up analyses desired (not required).
+
+## Discussion
+
+### Summary of Replication Attempt
+
+Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.
+
+### Commentary
+
+Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt. None of these need to be long.
