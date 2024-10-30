@@ -1,0 +1,134 @@
+---
+title: "Replication of Study 'How Quick Decisions Illuminate Moral Character' by Clayton R. Critcher, Yoel Inbar and David A. Pizarro (2012, Psychological Science)"
+author: "Caroline Porche (cporche@ucsd.edu)"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+format:
+  html:
+    toc: true
+    toc_depth: 3
+---
+
+<!-- Replication reports should all use this template to standardize reporting across projects.  These reports will be public supplementary materials that accompany the summary report(s) of the aggregate results. -->
+
+## Introduction
+
+Critcher, Inbar, and Pizarro (2012) found that the speed of decision-making plays a major role in shaping how we evaluate someone’s moral character. Quick decisions often signal certainty, which leads to stronger judgments—quick moral decisions get positive evaluations, while quick immoral ones result in harsher criticism. In contrast, slow decisions suggest indecision or conflict, leading to more moderate assessments. In this replication, I’ll be testing these findings again, but with a stronger emphasis on randomization to reduce any potential biases that may have influenced the original study. This could pose challenges, especially if additional variables or confounding factors emerge that were not fully accounted for before. By refining the experimental design, I aim to provide a clearer understanding of how decision speed impacts moral evaluations and address any limitations in the original methodology. To conduct this experiment, participants will be presented with scenarios where individuals make either moral or immoral decisions, with the critical variable being the speed of the decision (quick vs. slow). After each scenario, participants will rate the decision-maker’s moral character, perceived certainty, and impulsivity. The challenge will be creating scenarios that clearly manipulate decision speed without introducing unintended biases—ensuring quick decisions don’t seem impulsive by default and slow decisions aren’t perceived as overly reflective. Pretesting will be necessary to refine the stimuli and ensure participants interpret them consistently and as intended.
+
+\[Repository\] ([https://github.com/carolineporche1/critcher2012](https://github.com/ucsd-psych201a/critcher2013_2))
+
+\[Original Paper\] (https://github.com/carolineporche1/critcher2012/blob/main/original_paper/How_quick_decisions_illuminate_moral_cha.pdf)
+
+## Methods
+
+### Power Analysis
+
+### Planned Sample
+
+Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.
+
+### Materials
+
+“Immediately following the description of Justin and Nate’s actions, we asked participants the following sets of items (all on 1–7 scales):
+
+-   Quickness: "As a manipulation check, participants indicated how quickly (vs. slowly) the decision was made"
+
+-   Moral character evaluation: "The three moral evaluation items had participants assess the agents’ underlying moral principles and standards... by asking whether the agent: “has entirely good (vs. entirely bad) moral principles,” “has good (vs. bad) moral standards,” and “deep down has the moral principles and knowledge to do the right thing"."
+
+-   Certainty: "Participants indicated “how conflicted she felt when making her decision” (reverse-scored), “how many reservations she had” (reverse-scored), whether the target “was quite certain in her decision” (vs. had considerable reservations), and “how far she was from choosing the alternate course of action"."
+
+-   Emotional Impulsivity: "Participants indicated to what extent the person remained “calm and emotionally contained” (reverse-scored) and “became upset and acted without thinking.""
+
+-   Perceived Motives: "...participants rated Pamela’s motives to: “get more money” and 'protect her children"."
+
+### Procedure
+
+-   “Participants read about Pamela, who struggled to earn enough to provide for her two children. Pamela worked for Mr. Muir, a wealthy bachelor who took a special interest in Pamela’s son Alan, taking him on outings and buying him expensive presents. Although Pamela had no direct evidence that Mr. Muir’s intentions were unsavory, his obsession with Alan made Pamela feel suspicious of Muir’s true intentions.”
+
+-   “One day, Mr. Muir approached Pamela with a proposition. He told Pamela that he cared for Alan very much and would like to adopt him. If Pamela agreed, Muir would triple her salary. We assumed that people would find it morally abhorrent to, in effect, sell one’s son to a man who might abuse him.”
+
+    1.  Quick decision, accepted offer
+    2.  Quick decision, rejected offer
+    3.  Slow decision, accepted offer
+    4.  Slow decision, rejected offer
+
+    -   After reading it the participants were presented with a list of questions, ranked on a scale of 1-7. These questions were regarding their feelings toward Pamela and her decision.
+
+    -   In addition, we added a decision check at the end of each of the questions to ensure that the participants were fully present during the study.
+
+    -   The order of presenting the decision speed and moral outcome was randomized to reduce order effects.
+
+-   **Note**:
+
+    -   This procedure was followed **precisely** as outlined in the original article without deviations.
+
+### Analysis Plan
+
+-   **Primary Analysis**:\
+    I will conduct a two-way ANOVA to examine how decision speed (quick vs. slow) interacts with Pamela’s decision (accept vs. reject the offer) in influencing participants’ moral character evaluations. Based on the original study, I expect that quick decisions to sell her son will result in more negative judgments, while quick refusals will lead to more positive (though marginal) evaluations.
+
+-   **Additional Analyses**:\
+    I plan to explore whether these effects generalize to different types of moral dilemmas. Another potential avenue is to examine whether participant demographics (e.g., gender or age) moderate the observed effects.
+
+-   **Data Cleaning and Exclusion Rules**:\
+    I will follow the same data cleaning procedures outlined in the original study. I’ll ensure that participants with incomplete responses are excluded and covariates like emotional impulsivity are properly accounted for.
+
+-   **Note**:\
+    This analysis plan closely follows the approach described in the original article, with the same data exclusions, control variables, and covariate adjustments. Any additional analyses I conduct will build on the original methodology to enhance our understanding of decision speed and moral judgment.
+
+### Differences from Original Study
+
+Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study. The goal, of course, is to minimize those differences, but differences will inevitably occur. Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
+
+Different from the original study, we will only be conducting Experiment Two. In addition, our participants will not be from UC Berkeley and our experiment will be conducted online rather than in person. We can't control the exact environment as the original study but that is not predicted to make a difference. In the end of our study, we are planning to add an attention check.
+
+### Methods Addendum (Post Data Collection)
+
+You can comment this section out prior to final report with data collection.
+
+#### Actual Sample
+
+Sample size, demographics, data exclusions based on rules spelled out in analysis plan
+
+#### Differences from pre-data collection methods plan
+
+Any differences from what was described as the original plan, or “none”.
+
+## Results
+
+### Data preparation
+
+In the initial stages of our data preparation, we will begin by loading our data set and uploading the necessary libraries and functions. Then we will begin cleaning our data, which may include dropping any Na values or special characters that we do not need for our analysis. After this, we will filter the data and variables needed for the analysis and create the necessary rows and columns.
+
+```{r include=F}
+### Data Preparation
+
+#### Load Relevant Libraries and Functions
+
+#### Import data
+
+#### Data exclusion / filtering
+
+#### Prepare data for analysis - create columns etc.
+```
+
+### Confirmatory analysis
+
+The analyses were conducted as outlined in the analysis plan. Specifically, I used a two-way ANOVA to test the interaction between decision speed (quick vs. slow) and Pamela’s decision (accept vs. reject) on moral character evaluations.
+
+Replicating the original experiment, the two-way ANOVA on the moral character evaluation composite confirmed that the effect of decision speed depends on Pamela’s decision. As stated in the original article:
+
+> “Replicating Experiment 1, a two-way ANOVA on the moral character evaluation composite confirmed that the influence of decision speed depended on Pamela’s decision, F(1, 549) = 16.08, p \< .001 (see Figure 1).”
+
+### Exploratory analyses
+
+Any follow-up analyses desired (not required).
+
+## Discussion
+
+### Summary of Replication Attempt
+
+Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.
+
+### Commentary
+
+Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt. None of these need to be long.
