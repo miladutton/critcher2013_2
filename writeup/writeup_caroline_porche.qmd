@@ -75,6 +75,18 @@ Planned sample size and/or termination rule, sampling frame, known demographics 
 -   **Note**:\
     This analysis plan closely follows the approach described in the original article, with the same data exclusions, control variables, and covariate adjustments. Any additional analyses I conduct will build on the original methodology to enhance our understanding of decision speed and moral judgment.
 
+### Design Overview
+
+-   The two factors that are manipulated throughout this study are 'decision type' and 'decision speed'
+
+-   Throughout the study there are five measures taken and they were not repeated
+
+-   This study uses a between-participants design which tests the robustness of the effect rather than a within subjects design which could have had the consequence of an order effect
+
+-   There is no mention of steps taken to reduce demand characteristics within the study
+
+-   Participant's previous exposures to relevant situations of the study may pose as potential confounds
+
 ### Differences from Original Study
 
 Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study. The goal, of course, is to minimize those differences, but differences will inevitably occur. Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
