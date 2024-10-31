@@ -114,7 +114,9 @@ We got rid of participants who they can’t find data on in the missing data sec
 
 -   
 
-\
+Design overview
+
+The factors that were manipulated was decision type and decision speed. There was measures of perceived motives being 4 of them which were quickness, moral character evaluation, emotional impulsivity, and certainty. The bewteen because they chagned hte xpirment each perarpitciant only ahd one group and one condition. The measures were not repeated. The order effect could have been one of the consequences. Their was not mention of tackling the reduction of demand characteristics. They couldn't take into account people with similar situations in their lives to account for these potential cofounds.
 
 -   **Differences from original study**
 

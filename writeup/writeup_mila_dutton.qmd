@@ -3,7 +3,7 @@ title: "Replication of Study 'How Quick Decisions Illuminate Moral Character' by
 author: "Mila Dutton (midutton@ucsd.edu)"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 format:
-  pdf:
+  html:
     toc: true
     toc_depth: 3
 ---
@@ -102,6 +102,22 @@ After reading the story, they were presented with the questions which they ranke
 To begin analysis, we cleaned the data by excluding participants with missing data. A t-test was performed to assess the manipulation check, making sure participants recognized the difference between a slow and fast decision. If participants failed the check, their data would also be excluded.
 
 The key analysis of interest is the effect of decision speed and decision type on moral character evaluation. This analysis will help to confirm if the original findings (that moral judgments are influenced by both the speed of Pamela’s decision and her choice) are replicable in our sample. As in the original study, we will include perceived certainty as a covariate, which was shown to mediate the relationship between decision speed and moral judgment.
+
+### Design Overview
+
+-   Two factors were manipulated: decision type and decision speed.
+
+-   Five measures were taken: quickness, moral character evaluation, certainty, emotional impulsivity, and perceived motives.
+
+-   It was a between participants design.
+
+-   Measures were not repeated.
+
+-   A within subject design could have lead to an order effect.
+
+-   There was no mention of steps taken to reduce demand characteristics.
+
+-   Participants with previous traumatic exposure to a relevant situation or personal ties may have strong feelings regarding moral evaluation, which may serve as a confounding variable.
 
 ### Differences from Original Study
 
