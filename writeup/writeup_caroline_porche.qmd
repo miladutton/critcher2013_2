@@ -38,7 +38,7 @@ Planned sample size and/or termination rule, sampling frame, known demographics 
 
 -   Emotional Impulsivity: "Participants indicated to what extent the person remained “calm and emotionally contained” (reverse-scored) and “became upset and acted without thinking.""
 
--   Perceived Motives: "...participants rated Pamela’s motives to: “get more money” and 'protect her children"."
+-   Perceived Motives: "...participants rated their motives to: “get more money” and 'protect her children"."
 
 ### Procedure
 
@@ -58,7 +58,7 @@ Participants will be asked to rate how quickly each decision was made and evalua
 ### Analysis Plan
 
 -   **Primary Analysis**:\
-    I will conduct a two-way ANOVA to examine how decision speed (quick vs. slow) interacts with Pamela’s decision (accept vs. reject the offer) in influencing participants’ moral character evaluations. Based on the original study, I expect that quick decisions to sell her son will result in more negative judgments, while quick refusals will lead to more positive (though marginal) evaluations.
+    I will conduct a two-way ANOVA to examine how decision speed (quick vs. slow) interacts with their decision (accept vs. reject the offer) in influencing participants’ moral character evaluations. Based on the original study, I expect that quick decisions to sell her son will result in more negative judgments, while quick refusals will lead to more positive (though marginal) evaluations.
 
 -   **Additional Analyses**:\
     I plan to explore whether these effects generalize to different types of moral dilemmas. Another potential avenue is to examine whether participant demographics (e.g., gender or age) moderate the observed effects.
@@ -119,11 +119,11 @@ In the initial stages of our data preparation, we will begin by loading our data
 
 ### Confirmatory analysis
 
-The analyses were conducted as outlined in the analysis plan. Specifically, I used a two-way ANOVA to test the interaction between decision speed (quick vs. slow) and Pamela’s decision (accept vs. reject) on moral character evaluations.
+The analyses were conducted as outlined in the analysis plan. Specifically, I used a two-way ANOVA to test the interaction between decision speed (quick vs. slow) and the decision (accept vs. reject) on moral character evaluations.
 
-Replicating the original experiment, the two-way ANOVA on the moral character evaluation composite confirmed that the effect of decision speed depends on Pamela’s decision. As stated in the original article:
+Replicating the original experiment, the two-way ANOVA on the moral character evaluation composite confirmed that the effect of decision speed depends on their decision. As stated in the original article:
 
-> “Replicating Experiment 1, a two-way ANOVA on the moral character evaluation composite confirmed that the influence of decision speed depended on Pamela’s decision, F(1, 549) = 16.08, p \< .001 (see Figure 1).”
+> “Replicating Experiment 1, a two-way ANOVA on the moral character evaluation composite confirmed that the influence of decision speed depended on their decision, F(1, 549) = 16.08, p \< .001 (see Figure 1).”
 
 ### Exploratory analyses
 
