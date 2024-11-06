@@ -42,20 +42,14 @@ Planned sample size and/or termination rule, sampling frame, known demographics 
 
 ### Procedure
 
--   “Participants read about Pamela, who struggled to earn enough to provide for her two children. Pamela worked for Mr. Muir, a wealthy bachelor who took a special interest in Pamela’s son Alan, taking him on outings and buying him expensive presents. Although Pamela had no direct evidence that Mr. Muir’s intentions were unsavory, his obsession with Alan made Pamela feel suspicious of Muir’s true intentions.”
+Participants will read about two men, Justin and Nate, who come upon separate cash-filled wallets in a grocery store parking lot. Justin “was able to decide quickly” what to do, while Nate “was only able to decide after long and careful deliberation.”
 
--   “One day, Mr. Muir approached Pamela with a proposition. He told Pamela that he cared for Alan very much and would like to adopt him. If Pamela agreed, Muir would triple her salary. We assumed that people would find it morally abhorrent to, in effect, sell one’s son to a man who might abuse him.”
+Participants will then be assigned to one of two conditions:
 
-    1.  Quick decision, accepted offer
-    2.  Quick decision, rejected offer
-    3.  Slow decision, accepted offer
-    4.  Slow decision, rejected offer
+1. Moral decision: Justin and Nate both decide not to steal the money and return the wallets.
+2. Immoral decision: Justin and Nate both decide to keep the money and drive off.
 
-    -   After reading it the participants were presented with a list of questions, ranked on a scale of 1-7. These questions were regarding their feelings toward Pamela and her decision.
-
-    -   In addition, we added a decision check at the end of each of the questions to ensure that the participants were fully present during the study.
-
-    -   The order of presenting the decision speed and moral outcome was randomized to reduce order effects.
+Participants will be asked to rate how quickly each decision was made and evaluate the moral character, certainty, and impulsivity of both Justin and Nate. Randomization will be used to control for order effects.
 
 -   **Note**:
 
@@ -91,7 +85,7 @@ Planned sample size and/or termination rule, sampling frame, known demographics 
 
 Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study. The goal, of course, is to minimize those differences, but differences will inevitably occur. Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
 
-Different from the original study, we will only be conducting Experiment Two. In addition, our participants will not be from UC Berkeley and our experiment will be conducted online rather than in person. We can't control the exact environment as the original study but that is not predicted to make a difference. In the end of our study, we are planning to add an attention check.
+Different from the original study, we will only be conducting Experiment One. In addition, our participants will not be from UC Berkeley and our experiment will be conducted online rather than in person. We can't control the exact environment as the original study but that is not predicted to make a difference. In the end of our study, we are planning to add an attention check.
 
 ### Methods Addendum (Post Data Collection)
 
