@@ -14,7 +14,7 @@ format:
 
 This paper examines how the speed in making moral decisions can shape how others view as, as well as how we assess our own actions.This is a topic that has always been fascinating to me, especially as a psychology undergrad major, with experience researching cognition. The intersection between decision making and moral cognition touches on the core psychological questions regarding ethics, thought process, and social environments.
 
-The experiment will follow the structure of the original study by having participants read stories regarding making moral decisions at varying speeds. In experiment 1, two men find separate wallets in a parking lot. One man immediately decides what to do with the wallet while the other decides after a "long and careful deliberation". In the moral condition, both men turn the wallet in, and in the immoral decision both men keep the wallet. Participants are then given questionnaires in which they rank the following sets: quickness, moral character evaluation, certainty, and emotional impulsivity. Experiment 2 follows a similar structure but is between subjects. The story depicts a single mother who is struggling to afford her son. Her boss offers to adopt her son and in return will triple her salary. She is described as either taking 3 seconds or 3 days to come to a decision, and her decision was independently varied. Participants will then use the same scales as well as two additional scales in which they rank her motives to "get more money" and "protect her child". In our study, we will only be replicating experiment 2. A two way ANOVA test was run to assess decision speed and type of decision, and a regression analysis was run to further explore relationships between certainty and morality.
+The experiment will follow the structure of the original study by having participants read stories regarding making moral decisions at varying speeds. In experiment 1, two men find separate wallets in a parking lot. One man immediately decides what to do with the wallet while the other decides after a "long and careful deliberation". In the moral condition, both men turn the wallet in, and in the immoral decision both men keep the wallet. Participants are then given questionnaires in which they rank the following sets: quickness, moral character evaluation, certainty, and emotional impulsivity. Experiment 2 follows a similar structure but is between subjects. The story depicts a single mother who is struggling to afford her son. Her boss offers to adopt her son and in return will triple her salary. She is described as either taking 3 seconds or 3 days to come to a decision, and her decision was independently varied. Participants will then use the same scales as well as two additional scales in which they rank her motives to "get more money" and "protect her child". In our study, we will only be replicating experiment 1. A two way ANOVA test was run to assess decision speed and type of decision, and a regression analysis was run to further explore relationships between certainty and morality.
 
 A potential challenge will be the choice of wording. I was not able to find access to their actual stories, or the questionnaires given to participants. In these types of studies choices in wording, grammar, and tone can have a large impact on participant reaction. In order to be a sufficient replication, it is crucial to have minimal variance between stimuli. Additionally, I do not have experience with this type of data analysis so it will definitely be a learning curve. I am confident in my ability to learn, but I am sure it will take a bit to feel confident doing so.
 
@@ -30,17 +30,17 @@ Original effect size, power analysis for samples to achieve 80%, 90%, 95% power 
 
 The original study utilizes a series of analyses to determine whether decision speed impacts moral character perception.
 
--   **Decision on Moral Character:** A strong main effect of decision type with a high F-value (F(1, 551) = 402.22, p \< .001).
+-   **Decision on Moral Character:** A significant main effect of decision type (F(1, 117) = 541.52, p \< .001) revealed that Justin, who decided quickly (M = 6.44, SE = .08), was perceived differently from Nate (M = 2.15, SE = .12). Moral decision also influenced character evaluation (F(1, 117) = 127.07, p \< .001), with returning the wallet seen as morally better.
 
--   **Decision and Speed on Moral Character:** There was a moderate to large effect size on the influence of speed (F(1, 549) = 16.08, p \< .001), indicating that quick immoral decisions lead to more negative character perception, and vice versa.
+-   **Decision Speed and Emotional Impulsivity:** Justin was viewed as less emotionally impulsive (M = 2.40, SE = .11) than Nate (M = 3.79, SE = .12), (F(1, 117) = 95.26, p \< .001), but this did not affect moral evaluations (t \< 1).
 
--   **Certainty as a Mediator:** Certainty was a mediator between decision speed and character perception, with faster decisions linked to higher certainty ratings (Sobel test: *z* = 6.56, *p* \< .001) with a medium to large effect size.
+-   **Decision Speed and Moral Evaluation Polarization:** The Decision × Speed interaction was significant (F(1, 117) = 127.07, p \< .001), with quick immoral decisions leading to more negative evaluations (t(54) = 8.28, p \< .001) and quick moral decisions to more positive evaluations (t(63) = 7.71, p \< .001).
 
--   **Motive Strength:** There was a moderate to large effect size decision speed and type influencing perceived motives (F(1, 541) = 51.07, p \< .001).
+-   **Certainty as a Mediator:** Quick decisions were associated with higher certainty (F(1, 117) = 706.6, p \< .001). Certainty mediated the relationship between decision speed and moral evaluation, with greater certainty explaining more negative evaluations for immoral decisions and more positive evaluations for moral ones.
 
 Power analyses will be employed to determine the sample sizes needed to achieve 80%, 90%, 95% power for detecting effect sizes from the original study.
 
-While the original study had 553 participants in experiment 2, ours will likely have less for a number of reasons.
+While the original study had 119 participants in experiment 1, ours will likely have less for a number of reasons.
 
 -   **Funding:** Due to limited funding, and the importance of fairly compensating participants, we will have a smaller sample size than the original study.
 
@@ -58,13 +58,11 @@ The sampling frame will consist of individuals in the participant pool on the we
 
 ### Materials
 
-Participants in this study were presented with a story focusing on a character named Pamela, as outlined in the original article. The story was structured as follows.
+Participants in this study were presented with a story focusing on two men, as outlined in the original article. The story was structured as follows.
 
-"Pamela, a financially struggling mother, worked for Mr. Muir, a wealthy bachelor who showed unusual interest in her son, Alan, by taking him on outings and giving him expensive gifts. The scenario was crafted to make Mr. Muir’s intentions ambiguous, which caused Pamela to suspect his motives. At one point, Mr. Muir proposed to Pamela that he wanted to adopt Alan and offered to triple her salary if she agreed."
+Participants read about both Justin and Nate, two men who each independently came upon two separate cash-filled wallets in the parking lot of a local grocery store. Justin "was able to decide quickly" what to do, while Nate "was only able to decide after long and careful deliberation." Participants assigned to the moral condition learned that both men "did not steal the money but instead left the wallet with customer service." Those in the immoral condition learned that both men "pocketed the money and drove off."
 
-This between subjects design allows for manipulation of decision speed and moral decision. Participants were randomly assigned to learn that Pamela either took "3 seconds (quick)" or "3 days (slow)" to decide. Whether she chose to keep or sell Alan was also randomly assigned.
-
-After reading the story participants were presented with follow up questions which were to be ranked on a 7 point scale. The questions are as follows, and were taken directly from the original study.
+Immediately following the description of Justin and Nate’s actions, participants answered a series of questions related to the men’s moral character evaluation. These questions were rated on a 1-7 scale.
 
 -   **Quickness**:
 
@@ -82,38 +80,38 @@ After reading the story participants were presented with follow up questions whi
 
     -   "Participants indicated to what extent the person remained “calm and emotionally contained” (reverse-scored) and “became upset and acted without thinking.""
 
--   **Perceived Motives**:
-
-    -   "...participants rated Pamela’s motives to: “get more money” and 'protect her children"."
-
 ### Procedure
 
-Participants began by reading the story about Pamela and her moral decision. Following a between subjects design, they each read only one story, randomly assigned into one of the following groups:
+Participants will read about two men, Justin and Nate, who come upon separate cash-filled wallets in a grocery store parking lot. Justin “was able to decide quickly” what to do, while Nate “was only able to decide after long and careful deliberation.”
 
-1.  Quick decision, accepted offer.
-2.  Quick decision, rejected offer.
-3.  Slow decision, accepted offer.
-4.  Slow decision, rejected offer.
+Participants read stories from both conditions:
 
-After reading the story, they were presented with the questions which they ranked on a scale from 1-7 regarding their feelings toward Pamela and her decision. An attention check was also added to the end of the questions, to ensure that participants were present in the study. The order of presenting the decision speed and moral outcome was randomized to reduce order effects.
+1.  Moral decision: Justin and Nate both decide not to steal the money and return the wallets.
+2.  Immoral decision: Justin and Nate both decide to keep the money and drive off.
+
+Participants will be asked to rate how quickly each decision was made and evaluate the moral character, certainty, and impulsivity of both Justin and Nate. Randomization will be used to control for order effects.
+
+-   **Note**:
+
+    -   This procedure was followed **precisely** as outlined in the original article without deviations.
+
+After reading the story, they were presented with the questions which they ranked on a scale from 1-7 regarding their feelings toward the men's decisions. An attention check was also added to the end of the questions, to ensure that participants were present in the study.
 
 ### Analysis Plan
 
-To begin analysis, we cleaned the data by excluding participants with missing data. A t-test was performed to assess the manipulation check, making sure participants recognized the difference between a slow and fast decision. If participants failed the check, their data would also be excluded.
+To begin analysis, we cleaned the data by excluding participants with missing data. If participants failed the manipulation check, their data would also be excluded.
 
-The key analysis of interest is the effect of decision speed and decision type on moral character evaluation. This analysis will help to confirm if the original findings (that moral judgments are influenced by both the speed of Pamela’s decision and her choice) are replicable in our sample. As in the original study, we will include perceived certainty as a covariate, which was shown to mediate the relationship between decision speed and moral judgment.
+The key analysis of interest is the effect of decision speed and decision type on moral character evaluation. This analysis will help to confirm if the original findings (that moral judgments are influenced by both the speed of the decision and the choice) are replicable in our sample. As in the original study, we will include perceived certainty as a covariate, which was shown to mediate the relationship between decision speed and moral judgment.
 
 ### Design Overview
 
 -   Two factors were manipulated: decision type and decision speed.
 
--   Five measures were taken: quickness, moral character evaluation, certainty, emotional impulsivity, and perceived motives.
+-   Four measures were taken: quickness, moral character evaluation, certainty, emotional impulsivity.
 
--   It was a between participants design.
+-   It was a within subjects design.
 
 -   Measures were not repeated.
-
--   A within subject design could have lead to an order effect.
 
 -   There was no mention of steps taken to reduce demand characteristics.
 
@@ -121,7 +119,7 @@ The key analysis of interest is the effect of decision speed and decision type o
 
 ### Differences from Original Study
 
-The main difference from the original study is that we performed one experiment rather than two. Specifically, we replicated experiment 2, as it incorporated key procedural changes that enhanced the study’s design.
+The main difference from the original study is that we performed one experiment rather than two. Specifically, we replicated experiment 1.
 
 Our participant pool is also different. The original paper included mainly undergraduate students at UC Berkeley, as well as members from the surrounding community. As we are not a part of that institution, our participants are not from that community. We conducted our study entirely online, unlike the original study, which did not specify whether participants were tested in a lab or online. Using Prolific, we did not impose any regional restrictions, which meant we couldn’t control the exact environment in which participants completed the study. Lastly, we added an attention check at the end of the questions which the original study did not have. This was to ensure that participants were not just clicking through, and to help minimize bots. These differences are not expected to make a difference in obtaining the effect.
 
@@ -157,7 +155,7 @@ To prepare the dataset for analysis, we will begin by thoroughly cleaning the da
 
 ### Confirmatory analysis
 
-The main effect analysis was performed using a two-way ANOVA test. This analysis examined the main effects of decision type (whether participants accepted or rejected Mr. Muir's offer), and decision speed (slow or quick) on the perceived moral character evaluation. This analysis allowed for observation of how how these factors independently influenced moral evaluations.
+A two-way ANOVA was conducted to examine the main effects of decision type (whether participants decided to return or keep the wallet) and decision speed (quick or slow) on the moral character evaluation. This analysis allowed us to assess how these factors independently influenced moral judgments.
 
 *Side-by-side graph with original graph is ideal here*
 
