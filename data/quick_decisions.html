@@ -7,63 +7,65 @@
     <script src="https://unpkg.com/jspsych@8.0.2"></script>
     <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@2.0.0"></script>
     <script src="https://unpkg.com/@jspsych/plugin-survey-likert@2.0.0"></script>
+    <script src="https://unpkg.com/@jspsych-contrib/plugin-pipe"></script>
     <link href="https://unpkg.com/jspsych@8.0.2/css/jspsych.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <script>
-        const jsPsych = initJsPsych({
-            on_finish: function() {
-                jsPsych.data.get().localSave("csv", "experiment_data.csv");
-            }
-        });
+        const jsPsych = initJsPsych();
 
-        // Randomly assign a participant ID (hidden from participant)
-        const participantID = Math.floor(Math.random() * 1000000);
+        // Generate a unique subject_id using randomization
+        const subject_id = jsPsych.randomization.randomID(10);
+        const filename = `${subject_id}.csv`;
 
-        // Define the welcome message
         const welcomeMessage = {
             type: jsPsychHtmlKeyboardResponse,
-            stimulus: `<h1>Welcome to the Moral Decision-Making Study</h1>
-                       <p>Thank you for taking the time to participate in this study. Today, you will read a short story and answer questions about two characters, Justin and Nate. Your responses will help us understand how people perceive decision-making in different moral scenarios.</p>
-                       <p><strong>What to expect:</strong></p>
-                       <p>First, you will be presented with a brief story describing the actions of the two characters.</p>
-                       <p>After reading the story, you will be asked a series of questions regarding each character’s decisions and your impressions of their behavior. The story will remain visible on the screen as you answer the questions to help you recall details.</p>
-                       <p>Each question will use a scale from 1 to 7. Please answer each question based on your personal perception of each character.</p>
-                       <p>Your responses are anonymous and will only be used for research purposes. Please try to respond as accurately and honestly as possible.</p>
-                       <p>When you are ready to begin, press any key to continue.</p>`
+            stimulus: `<h1 class="story-text">Welcome to the Moral Decision-Making Study</h1>
+                       <p class="story-text">Thank you for taking the time to participate in this study. Today, you will read a short story and answer questions about two characters, Justin and Nate. Your responses will help us understand how people perceive decision-making in different moral scenarios.</p>
+                       <p class="story-text"><strong>What to expect:</strong></p>
+                       <p class="story-text">First, you will be presented with a brief story describing the actions of the two characters.</p>
+                       <p class="story-text">After reading the story, you will be asked a series of questions regarding each character’s decisions and your impressions of their behavior. The story will remain visible on the screen as you answer the questions to help you recall details.</p>
+                       <p class="story-text">Each question will use a scale from 1 to 7. Please answer each question based on your personal perception of each character.</p>
+                       <p class="story-text">Your responses are anonymous and will only be used for research purposes. Please try to respond as accurately and honestly as possible.</p>
+                       <p class="story-text">When you are ready to begin, press any key to continue.</p>`
         };
 
-        // Define the stories for each condition
-        const moralStory = `
-            <p>Justin and Nate were walking to separate cars in the parking lot of Andronico’s, a local grocery store, when they each spotted a different lost wallet next to their cars. Upon picking up the wallet and looking inside, each found several hundred dollars in cash. Each man considered whether he should return the wallet and money to the Customer Service desk at Andronico’s, or pocket the money and drive away.</p>
-            <p>Justin saw his decision as an easy one and was able to decide quickly. He did not steal the money and instead left the wallet with Customer Service.</p>
-            <p>Nate saw his decision as difficult and was only able to decide after long and careful deliberation. After several minutes of thinking in his car, he too decided not to steal the money and instead left the wallet with Customer Service.</p>
-        `;
-        
-        const immoralStory = `
-            <p>Justin and Nate were walking to separate cars in the parking lot of Andronico’s, a local grocery store, when they each spotted a different lost wallet next to their cars. Upon picking up the wallet and looking inside, each found several hundred dollars in cash. Each man considered whether he should return the wallet and money to the Customer Service desk at Andronico’s, or pocket the money and drive away.</p>
-            <p>Justin saw his decision as an easy one and was able to decide quickly. He pocketed the money and drove off.</p>
-            <p>Nate saw his decision as difficult and was only able to decide after long and careful deliberation. After several minutes of thinking in his car, he too decided to pocket the money and drive off.</p>
-        `;
+        const moralStory = `<p class="story-text">Justin and Nate were walking to separate cars in the parking lot of Andronico’s, a local grocery store, when they each spotted a different lost wallet next to their cars. Upon picking up the wallet and looking inside, each found several hundred dollars in cash. Each man considered whether he should return the wallet and money to the Customer Service desk at Andronico’s, or pocket the money and drive away.</p>
+                            <p class="story-text">Justin saw his decision as an easy one and was able to decide quickly. He did not steal the money and instead left the wallet with Customer Service.</p>
+                            <p class="story-text">Nate saw his decision as difficult and was only able to decide after long and careful deliberation. After several minutes of thinking in his car, he too decided not to steal the money and instead left the wallet with Customer Service.</p>`;
 
-        // Randomly assign participants to moral or immoral condition
+        const immoralStory = `<p class="story-text">Justin and Nate were walking to separate cars in the parking lot of Andronico’s, a local grocery store, when they each spotted a different lost wallet next to their cars. Upon picking up the wallet and looking inside, each found several hundred dollars in cash. Each man considered whether he should return the wallet and money to the Customer Service desk at Andronico’s, or pocket the money and drive away.</p>
+                              <p class="story-text">Justin saw his decision as an easy one and was able to decide quickly. He pocketed the money and drove off.</p>
+                              <p class="story-text">Nate saw his decision as difficult and was only able to decide after long and careful deliberation. After several minutes of thinking in his car, he too decided to pocket the money and drive off.</p>`;
+
         const condition = Math.random() < 0.5 ? 'moral' : 'immoral';
         const story = condition === 'moral' ? moralStory : immoralStory;
 
-        // Story presentation
         const storyPresentation = {
             type: jsPsychHtmlKeyboardResponse,
-            stimulus: story + "<p>Press any key to continue to the questions.</p>",
+            stimulus: story + "<p class='story-text'>Press any key to continue to the questions.</p>",
             choices: "ALL_KEYS"
         };
 
-        // Function to generate questions about a character
+        // Attention check question
+        const attentionCheck = {
+            type: jsPsychSurveyLikert,
+            preamble: `<p class="story-text">Please answer the following question to confirm your attention during the story.</p>`,
+            questions: [
+                {
+                    prompt: "What item did Justin and Nate find?",
+                    labels: ["A wallet", "A phone", "A watch", "A bag"],
+                    required: true
+                }
+            ]
+        };
+
         function createCharacterQuestions(character) {
             return {
                 type: jsPsychSurveyLikert,
-                preamble: `<div>${story}</div><h3>Questions about ${character}</h3>`,
+                preamble: `<div class="story-text">${story}</div><h3 class="question-text">Questions about ${character}</h3>`,
                 questions: [
                     { prompt: `Did ${character} make his decision quickly or slowly?`, labels: ["1 (particularly slowly)", "2", "3", "4", "5", "6", "7 (particularly quickly)"], required: true },
                     { prompt: `Does ${character} have underlying moral principles that are good, bad, or somewhere in between?`, labels: ["1 (completely bad)", "2", "3", "4 (mixed)", "5", "6", "7 (completely good)"], required: true },
@@ -71,41 +73,41 @@
                     { prompt: `Does ${character} possess the moral knowledge to do ‘the right thing’?`, labels: ["1 (not at all)", "2", "3", "4 (somewhat)", "5", "6", "7 (completely)"], required: true },
                     { prompt: `Would you say ${character} was quite certain in his decision, or did he have hesitations?`, labels: ["1 (completely certain)", "2", "3", "4", "5", "6", "7 (considerable hesitations)"], required: true },
                     { prompt: `How close was ${character} to choosing the alternate action?`, labels: ["1 (very close)", "2", "3", "4", "5", "6", "7 (not close at all)"], required: true },
-                    { prompt: `How conflicted do you think ${character} felt in making the decision?`, labels: ["1 (very conflicted)", "2", "3", "4", "5", "6", "7 (not at all conflicted)"], required: true },
-                    { prompt: `Do you think ${character} had reservations about the decision?`, labels: ["1 (none at all)", "2", "3", "4", "5", "6", "7 (a whole lot)"], required: true },
-                    { prompt: `Was ${character} calm and emotionally contained while making the decision?`, labels: ["1 (not at all)", "2", "3", "4", "5", "6", "7 (entirely so)"], required: true },
-                    { prompt: `Did ${character} act without thinking?`, labels: ["1 (not at all)", "2", "3", "4", "5", "6", "7 (entirely so)"], required: true }
-                ],
-                data: function() {
-                    return {
-                        participantID: participantID,   // Participant ID
-                        condition: condition,           // Moral/Immoral condition
-                        character: character,           // The character being questioned
-                        responses: this.responses       // Collect all the responses
-                    };
-                }
+                    { prompt: `How conflicted do you think ${character} felt in making the decision?`, labels: ["1 (very conflicted)", "2", "3", "4", "5", "6", "7 (not conflicted at all)"], required: true },
+                ]
             };
         }
 
-        // Thank you message
-        const thankYouMessage = {
-            type: jsPsychHtmlKeyboardResponse,
-            stimulus: `<h1>Thank you for participating!</h1>
-                       <p>Your responses have been recorded.</p>
-                       <p>Press any key to exit.</p>`
+        const save_data = {
+            type: jsPsychPipe,
+            action: "save",
+            experiment_id: "omsyQuAKgQDW",  // Your experiment ID
+            filename: filename,
+            data_string: () => jsPsych.data.get().csv()
         };
 
-        // Timeline setup
+        const thankYouMessage = {
+            type: jsPsychHtmlKeyboardResponse,
+            stimulus: `
+                <h1 class="story-text">Thank you for participating!</h1>
+                <p class="story-text">We greatly appreciate your time and input. Your responses will help us understand decision-making in moral scenarios.</p>
+                <p class="story-text">Press any key to finish the experiment.</p>`,
+            choices: "ALL_KEYS"
+        };
+
+        // Timeline of the experiment
         const timeline = [
             welcomeMessage,
             storyPresentation,
             createCharacterQuestions('Justin'),
             createCharacterQuestions('Nate'),
-            thankYouMessage
+            attentionCheck,  // Attention check after the story
+            save_data,
+            thankYouMessage  // Always show thank you message at the end
         ];
 
-        // Run the experiment
         jsPsych.run(timeline);
+
     </script>
 </body>
 </html>

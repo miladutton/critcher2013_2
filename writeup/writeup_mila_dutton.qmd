@@ -38,21 +38,11 @@ The original study utilizes a series of analyses to determine whether decision s
 
 -   **Certainty as a Mediator:** Quick decisions were associated with higher certainty (F(1, 117) = 706.6, p \< .001). Certainty mediated the relationship between decision speed and moral evaluation, with greater certainty explaining more negative evaluations for immoral decisions and more positive evaluations for moral ones.
 
-Power analyses will be employed to determine the sample sizes needed to achieve 80%, 90%, 95% power for detecting effect sizes from the original study.
-
-While the original study had 119 participants in experiment 1, ours had less for a number of reasons.
-
--   **Funding:** Due to limited funding, and the importance of fairly compensating participants, we had a smaller sample size than the original study.
-
--   **Dropout Rate:** To account for participants potentially not completing the study, we aimed to start with a larger sample size.
-
--   **Quality of Data:** To ensure we have enough good quality data, again we aimed to start with a larger sample size. If participants failed attention checks we were able to discard their data while still having enough good quality data.
-
--   **Participant Recruitment**: The availability of the target population may have influenced our recruitment ability, potentially impacting our planned sample size.
+We planned to perform power analyses to determine the sample sizes needed to achieve 80%, 90%, 95% power for detecting effect sizes from the original study. However, the original study did not give difference between means, or error bars. For that reason, we were unable to calculate effect size and determine sample size through that methodology. The original study had 119 participants, so we followed the standard practice of doing 2.5 times the original sample, leaving us with a sample size of 298.
 
 ### Planned Sample
 
-Based on the original studies findings, we plan to have a sample size of approximately **FILL IN** participants. This sample size will take into account fair compensation, dropout rate, and ensuring high quality data. Our study will implement a termination rule based on the time constraints. As we have just over a month to complete this study, if we do not meet our ideal sample size by **ADD DATE**, we will still stop recruitment to ensure adequate time for data analysis.
+Based on the original studies findings, we plan to have a sample size of approximately 298 participants. This is 2.5 times the original sample size. Our study will implement a termination rule based on the time constraints. As we have just over a month to complete this study, if we do not meet our ideal sample size by **ADD DATE**, we will still stop recruitment to ensure adequate time for data analysis.
 
 The sampling frame will consist of individuals in the participant pool on the website Prolific. As in line with the original study, participants will mostly be students in higher education, however it will not be specific to region. The original study did not state any demographic information, however we will collect data such as age and gender. No preselection rules will apply.
 
