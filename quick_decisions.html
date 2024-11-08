@@ -18,7 +18,7 @@
 
         // Generate a unique subject_id using randomization
         const subject_id = jsPsych.randomization.randomID(10);
-        const filename = `${subject_id}.csv`;
+        const condition = Math.random() < 0.5 ? 'moral' : 'immoral';
 
         const welcomeMessage = {
             type: jsPsychHtmlKeyboardResponse,
@@ -40,7 +40,6 @@
                               <p class="story-text">Justin saw his decision as an easy one and was able to decide quickly. He pocketed the money and drove off.</p>
                               <p class="story-text">Nate saw his decision as difficult and was only able to decide after long and careful deliberation. After several minutes of thinking in his car, he too decided to pocket the money and drive off.</p>`;
 
-        const condition = Math.random() < 0.5 ? 'moral' : 'immoral';
         const story = condition === 'moral' ? moralStory : immoralStory;
 
         const storyPresentation = {
@@ -78,12 +77,34 @@
             };
         }
 
+        // Collect and save data
         const save_data = {
             type: jsPsychPipe,
             action: "save",
             experiment_id: "omsyQuAKgQDW",  // Your experiment ID
-            filename: filename,
-            data_string: () => jsPsych.data.get().csv()
+            filename: "experiment_data.csv",  // Save to the same file for all participants
+            data_string: function () {
+                // Collect responses
+                const responses = jsPsych.data.get().last(1).values()[0];
+                const trial_time = responses.trial_duration;  // Time spent on this trial
+                const attention_check = responses.Q0;  // Attention check answer
+                const condition = responses.condition;  // Moral or immoral condition
+                
+                // Responses for Justin and Nate
+                const responses_justin = [];
+                const responses_nate = [];
+                for (let i = 1; i <= 7; i++) {
+                    responses_justin.push(responses[`Q${i}`]);  // Collect responses for Justin
+                    responses_nate.push(responses[`Q${i + 7}`]);  // Collect responses for Nate
+                }
+
+                // Prepare data in CSV format
+                const data = [
+                    `${subject_id},${trial_time},${condition},${attention_check},"${responses_justin.join('","')}","${responses_nate.join('","')}"`
+                ];
+
+                return data.join("\n");
+            }
         };
 
         const thankYouMessage = {
@@ -95,19 +116,17 @@
             choices: "ALL_KEYS"
         };
 
-        // Timeline of the experiment
         const timeline = [
             welcomeMessage,
             storyPresentation,
-            createCharacterQuestions('Justin'),
-            createCharacterQuestions('Nate'),
-            attentionCheck,  // Attention check after the story
-            save_data,
-            thankYouMessage  // Always show thank you message at the end
+            createCharacterQuestions("Justin"),
+            createCharacterQuestions("Nate"),
+            attentionCheck,
+            save_data,  // Save data after each block
+            thankYouMessage
         ];
 
         jsPsych.run(timeline);
-
     </script>
 </body>
 </html>
