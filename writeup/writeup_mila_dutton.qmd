@@ -22,11 +22,11 @@ A potential challenge is that I do not have experience with this type of data an
 
 [Original Paper](https://drive.google.com/file/d/182sSzaaCkCtBFzJWphGbDNWhHVsF7vaM/view)
 
+[Experiment](https://ucsd-psych201a.github.io/critcher2013_2/quick_decisions.html)
+
 ## Methods
 
 ### Power Analysis
-
-Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size. Considerations of feasibility for selecting planned sample size.
 
 The original study utilizes a series of analyses to determine whether decision speed impacts moral character perception.
 
@@ -44,7 +44,7 @@ We planned to perform power analyses to determine the sample sizes needed to ach
 
 Based on the original studies findings, we plan to have a sample size of approximately 298 participants. This is 2.5 times the original sample size. Our study will implement a termination rule based on the time constraints. As we have just over a month to complete this study, if we do not meet our ideal sample size by **ADD DATE**, we will still stop recruitment to ensure adequate time for data analysis.
 
-The sampling frame will consist of individuals in the participant pool on the website Prolific. As in line with the original study, participants will mostly be students in higher education, however it will not be specific to region. The original study did not state any demographic information, however we will collect data such as age and gender. No preselection rules will apply.
+The sampling frame will consist of individuals in the participant pool on the website Prolific. No preselection rules applied.
 
 ### Materials
 
@@ -79,33 +79,25 @@ Immediately following the description of Justin and Nate’s actions, participan
 -   **Certainty**:
 
     -   Would you say \[Character\] was quite certain in his decision, or did \[Character\] have hesitations about his or her decision? (1 = completely certain, 7 = considerable hesitations)
-
-    <!-- -->
-
     -   How close do you think \[Character\] was to choosing the alternate course of action? (1 = very close to, 7 = not close at all)
-
     -   How conflicted do you think \[Character\] felt in making the decision? (1 = very conflicted, 7 = not at all conflicted)
-
     -   Based on the information provided, do you think \[Character\] had many reservations about the decision? (1 = none at all, 7 = a whole lot)
 
 -   **Emotional impulsivity**:
 
     -   Do you think Justin (or Nate) was calm and emotionally contained while making the decision? (1 = not at all, 7 = entirely so)
-
-    <!-- -->
-
     -   To what extent do you think Justin (or Nate) became upset and acted without thinking? (1 = not at all, 7 = entirely so)
 
 ### Procedure
 
 Participants read about two men, Justin and Nate, who come upon separate cash-filled wallets in a grocery store parking lot. Justin “was able to decide quickly” what to do, while Nate “was only able to decide after long and careful deliberation.”
 
-Participants read stories from both conditions:
+Participants read stories from one of the following conditions:
 
 1.  Moral decision: Justin and Nate both decide not to steal the money and return the wallets.
 2.  Immoral decision: Justin and Nate both decide to keep the money and drive off.
 
-Participants will be asked to rate how quickly each decision was made and evaluate the moral character, certainty, and impulsivity of both Justin and Nate.
+Participants were asked to rate how quickly each decision was made and evaluate the moral character, certainty, and impulsivity of both Justin and Nate.
 
 -   **Note**:
 
@@ -137,7 +129,7 @@ The key analysis of interest is the effect of decision speed and decision type o
 
 The main difference from the original study is that we performed one experiment rather than two. Specifically, we replicated experiment 1.
 
-Our participant pool is also different. The original paper included mainly undergraduate students at UC Berkeley, as well as members from the surrounding community. As we are not a part of that institution, our participants are not from that community. We conducted our study entirely online, unlike the original study, which did not specify whether participants were tested in a lab or online. Using Prolific, we did not impose any regional restrictions, which meant we couldn’t control the exact environment in which participants completed the study. Lastly, we added an attention check at the end of the questions which the original study did not have. This was to ensure that participants were not just clicking through, and to help minimize bots. These differences are not expected to make a difference in obtaining the effect.
+Our participant pool was also different. The original paper included mainly undergraduate students at UC Berkeley, as well as members from the surrounding community. As we are not a part of that institution, our participants are not from that community. We conducted our study entirely online, unlike the original study, which did not specify whether participants were tested in a lab or online. Using JsPsych, we did not impose any regional restrictions, which meant we couldn’t control the exact environment in which participants completed the study. Lastly, we added an attention check at the end of the questions which the original study did not have. This was to ensure that participants were not just clicking through, and to help minimize bots. These differences are not expected to make a difference in obtaining the effect.
 
 ### Methods Addendum (Post Data Collection)
 
@@ -155,18 +147,132 @@ Any differences from what was described as the original plan, or “none”.
 
 ### Data preparation
 
-To prepare the dataset for analysis, we will begin by thoroughly cleaning the data. Entries with missing values will be removed to maintain data integrity. Additionally, any responses that did not pass attention checks will be excluded to ensure high data quality. Outliers will be identified and assessed; if they prove to be problematic they will also be removed. After these steps, we will ensure the dataset is correctly formatted, providing a solid foundation for the analysis phase.
+To prepare the dataset for analysis, we began by thoroughly cleaning the data. Entries with missing values were removed to maintain data integrity. Additionally, any responses that did not pass attention checks were excluded to ensure high data quality. Outliers were identified and assessed; if they proved to be problematic they were also removed. After these steps, we ensured the dataset was correctly formatted, providing a solid foundation for the analysis phase.
 
 ```{r include=F}
 ### Data Preparation
 
 #### Load Relevant Libraries and Functions
+library(dplyr)
+library(tidyr)
+library(purrr)
+library(readr)
+library(stringr)
+library(jsonlite)
+library(magrittr)
 
 #### Import data
+# Set the path to the folder
+folder_path <- "/Users/miladutton/Desktop/CSS/CSS204/critcher2013_2/data/osfstorage-archive"
+
+# List all CSV files in the folder
+csv_files <- list.files(path = folder_path, pattern = "*.csv", full.names = TRUE, recursive = TRUE)
+
+# Update combined_data by reading and combining all CSV files with subject_id column at the front
+combined_data <- csv_files %>%
+  map_dfr(~ {
+    # Read each file
+    data <- read_csv(.x)
+    
+    # Extract the subject ID from the file name (remove directory path and ".csv" extension)
+    subject_id <- tools::file_path_sans_ext(basename(.x))
+    
+    # Add subject_id as the first column
+    data %>% mutate(subject_id = subject_id, .before = 1)
+  })
 
 #### Data exclusion / filtering
+#### Prepare data for analysis - create columns etc..
+cleaned_data <- combined_data %>%
+  # Select relevant columns: subject ID, response time (rt), stimulus, and response
+  select(subject_id, rt, stimulus, response) %>%
+  
+  # Create a 'condition' column based on the stimulus text
+  mutate(condition = case_when(
+    str_detect(stimulus, "steal the money") ~ "moral",
+    str_detect(stimulus, "pocketed the money") ~ "immoral",
+    TRUE ~ NA_character_ # Default to NA if no match is found
+  )) %>%
+  
+  # Fill down missing 'condition' values to propagate them
+  fill(condition, .direction = "down") %>%
+  
+  # Group by 'subject_id' for operations specific to each subject
+  group_by(subject_id) %>%
+  
+  # Add the attention check as a new column (extract Q0 value from the last row for each subject)
+  mutate(attention_check = if_else(
+    row_number() == n(), # Check if it's the last row for the participant
+    str_extract(response, '"Q0":\\d+') %>% # Extract the "Q0" key-value pair
+      str_extract("\\d+$"),  # Extract the numeric value after "Q0"
+    NA_character_ # Otherwise, set to NA
+  )) %>%
+  
+  # Remove the grouping after creating the attention check column
+  ungroup() %>%
+  
+  # Convert the attention check column to numeric
+  mutate(attention_check = as.numeric(attention_check)) %>%
+  
+  # Fill down and up to propagate the attention_check value across rows
+  fill(attention_check, .direction = "downup") %>%
+  
+  # Filter out rows where 'response' contains only the attention check
+  filter(!is.na(response) & nchar(response) > 10)
 
-#### Prepare data for analysis - create columns etc.
+# Parse the response column and assign targets
+split_data <- cleaned_data %>%
+  # Parse the JSON response column into structured data
+  mutate(response_parsed = map(response, ~ fromJSON(.) %>% as.data.frame())) %>%
+  
+  # Unnest the parsed JSON data into separate columns
+  unnest(cols = response_parsed) %>%
+  
+  # Add a 'target' column to indicate whether the row corresponds to Justin or Nate
+  mutate(
+    target = case_when(
+      row_number() %% 2 == 1 ~ "Justin", # Odd rows are for Justin
+      TRUE ~ "Nate" # Even rows are for Nate
+    )
+  )
+# Reshape the data into long format and create the combined column
+long_data <- split_data %>%
+  pivot_longer(
+    cols = starts_with("Q"),        # Columns like Q0, Q1, Q2, ...
+    names_to = "question",          # New column for question names (e.g., Q0, Q1)
+    values_to = "response_value"    # New column for response values
+  ) %>%
+  # Combine 'target' and 'question' into a new column named 'question_value'
+  mutate(question_value = paste(target, question, sep = "_")) %>%
+  # Drop extra columns
+  select(-target, -question, -response, -stimulus)
+
+# Filter so only participants who passed attention check are included (value=0)
+cleaned_long_data <- long_data %>%
+  filter(attention_check == 0)
+
+# Identify participants who pass both attention checks
+valid_participants <- cleaned_long_data %>%
+  filter(
+    (question_value == "Justin_Q0" & response_value == 1) |
+    (question_value == "Nate_Q0" & response_value == 0)
+  ) %>%
+  distinct(subject_id) %>%  # Get unique subject IDs
+  pull(subject_id)
+
+# Filter the data to keep only valid participants and add decision_speed column
+cleaned_long_data <- cleaned_long_data %>%
+  filter(subject_id %in% valid_participants) %>%
+  mutate(
+    decision_speed = ifelse(
+      grepl("Justin", question_value), "quick", 
+      ifelse(grepl("Nate", question_value), "slow", NA)
+    )
+  )
+#Reorder columna
+cleaned_long_data <- cleaned_long_data %>%
+  select(subject_id, condition, decision_speed, question_value, response_value, attention_check, rt)
+
 ```
 
 ### Confirmatory analysis
