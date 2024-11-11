@@ -62,20 +62,67 @@
         };
 
         function createCharacterQuestions(character) {
-            return {
-                type: jsPsychSurveyLikert,
-                preamble: `<div class="story-text">${story}</div><h3 class="question-text">Questions about ${character}</h3>`,
-                questions: [
-                    { prompt: `Did ${character} make his decision quickly or slowly?`, labels: ["Slow", "Quick"], required: true },
-                    { prompt: `Does ${character} have underlying moral principles that are good, bad, or somewhere in between?`, labels: ["1 (completely bad)", "2", "3", "4 (mixed)", "5", "6", "7 (completely good)"], required: true },
-                    { prompt: `Does ${character} have moral standards that are good, bad, or somewhere in between?`, labels: ["1 (completely bad)", "2", "3", "4 (mixed)", "5", "6", "7 (completely good)"], required: true },
-                    { prompt: `Does ${character} possess the moral knowledge to do ‘the right thing’?`, labels: ["1 (not at all)", "2", "3", "4 (somewhat)", "5", "6", "7 (completely)"], required: true },
-                    { prompt: `Would you say ${character} was quite certain in his decision, or did he have hesitations?`, labels: ["1 (completely certain)", "2", "3", "4", "5", "6", "7 (considerable hesitations)"], required: true },
-                    { prompt: `How close was ${character} to choosing the alternate action?`, labels: ["1 (very close)", "2", "3", "4", "5", "6", "7 (not close at all)"], required: true },
-                    { prompt: `How conflicted do you think ${character} felt in making the decision?`, labels: ["1 (very conflicted)", "2", "3", "4", "5", "6", "7 (not conflicted at all)"], required: true },
-                ]
-            };
-        }
+    return {
+        type: jsPsychSurveyLikert,
+        preamble: `<div class="story-text">${story}</div><h3 class="question-text">Questions about ${character}</h3>`,
+        questions: [
+            // Quickness with two options
+            { 
+                prompt: `Did ${character} make his decision quickly or slowly?`, 
+                labels: ["Slow", "Quick"], 
+                required: true 
+            },
+            // Moral Character Evaluation
+            { 
+                prompt: `Regardless of ${character}'s decision, does it sound like ${character} has underlying moral principles that are good, bad, or somewhere in between?`, 
+                labels: ["1 (completely bad)", "2", "3", "4 (mixed)", "5", "6", "7 (completely good)"], 
+                required: true 
+            },
+            { 
+                prompt: `Regardless of ${character}'s decision, do you think ${character} has moral standards that are good, bad, or somewhere in between?`, 
+                labels: ["1 (completely bad)", "2", "3", "4 (mixed)", "5", "6", "7 (completely good)"], 
+                required: true 
+            },
+            { 
+                prompt: `Regardless of ${character}'s decision, do you think ${character} possesses the moral knowledge and principles necessary to do ‘the right thing’?`, 
+                labels: ["1 (not at all)", "2", "3", "4 (somewhat)", "5", "6", "7 (completely)"], 
+                required: true 
+            },
+            // Certainty
+            { 
+                prompt: `Would you say ${character} was quite certain in his decision, or did ${character} have hesitations about his or her decision?`, 
+                labels: ["1 (completely certain)", "2", "3", "4", "5", "6", "7 (considerable hesitations)"], 
+                required: true 
+            },
+            { 
+                prompt: `How close do you think ${character} was to choosing the alternate course of action?`, 
+                labels: ["1 (very close)", "2", "3", "4", "5", "6", "7 (not close at all)"], 
+                required: true 
+            },
+            { 
+                prompt: `How conflicted do you think ${character} felt in making the decision?`, 
+                labels: ["1 (very conflicted)", "2", "3", "4", "5", "6", "7 (not at all conflicted)"], 
+                required: true 
+            },
+            { 
+                prompt: `Based on the information provided, do you think ${character} had many reservations about the decision?`, 
+                labels: ["1 (none at all)", "2", "3", "4", "5", "6", "7 (a whole lot)"], 
+                required: true 
+            },
+            // Emotional Impulsivity
+            { 
+                prompt: `Do you think ${character} was calm and emotionally contained while making the decision?`, 
+                labels: ["1 (not at all)", "2", "3", "4", "5", "6", "7 (entirely so)"], 
+                required: true 
+            },
+            { 
+                prompt: `To what extent do you think ${character} became upset and acted without thinking?`, 
+                labels: ["1 (not at all)", "2", "3", "4", "5", "6", "7 (entirely so)"], 
+                required: true 
+            }
+        ]
+    };
+}
 
         // Use subject_id to create a unique filename
         const filename = `${subject_id}.csv`;
