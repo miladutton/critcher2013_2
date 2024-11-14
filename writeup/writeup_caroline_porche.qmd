@@ -46,8 +46,8 @@ Participants will read about two men, Justin and Nate, who come upon separate ca
 
 Participants will then be assigned to one of two conditions:
 
-1. Moral decision: Justin and Nate both decide not to steal the money and return the wallets.
-2. Immoral decision: Justin and Nate both decide to keep the money and drive off.
+1.  Moral decision: Justin and Nate both decide not to steal the money and return the wallets.
+2.  Immoral decision: Justin and Nate both decide to keep the money and drive off.
 
 Participants will be asked to rate how quickly each decision was made and evaluate the moral character, certainty, and impulsivity of both Justin and Nate. Randomization will be used to control for order effects.
 
@@ -105,17 +105,75 @@ Any differences from what was described as the original plan, or “none”.
 
 In the initial stages of our data preparation, we will begin by loading our data set and uploading the necessary libraries and functions. Then we will begin cleaning our data, which may include dropping any Na values or special characters that we do not need for our analysis. After this, we will filter the data and variables needed for the analysis and create the necessary rows and columns.
 
-```{r include=F}
-### Data Preparation
+\`\`\`{r include=F} \### Data Preparation
 
-#### Load Relevant Libraries and Functions
+#### Load Required Libraries
 
-#### Import data
+library(dplyr) library(tidyr) library(purrr) library(readr) library(stringr) library(jsonlite) library(magrittr)
 
-#### Data exclusion / filtering
+#### Load Data
 
-#### Prepare data for analysis - create columns etc.
+# Define the directory path
+
+data_directory \<- "/Users/carolineporche/Desktop/CSS/CSS204/critcher2013_2/data/osfstorage-archive"
+
+# Retrieve a list of all CSV files within the directory
+
+file_list \<- list.files(path = data_directory, pattern = "\*.csv", full.names = TRUE, recursive = TRUE)
+
+# Read and merge data from all CSV files, adding a 'subject_id' column
+
+merged_data \<- file_list %\>% map_dfr(\~ { \# Load the data from each file temp_data \<- read_csv(.x)
+
+```         
+# Extract and format the subject ID from the filename
+id <- tools::file_path_sans_ext(basename(.x))
+
+# Insert subject ID as the initial column
+temp_data %>% mutate(subject_id = id, .before = 1)
 ```
+
+})
+
+#### Data Cleaning and Filtering
+
+# Make sure 'processed_data' is correctly defined
+
+processed_data \<- merged_data %\>% \# Keep essential columns: subject ID, response time, stimulus, and response select(subject_id, rt, stimulus, response) %\>%
+
+\# Add a 'condition' column based on specific stimulus content mutate(condition = case_when( str_detect(stimulus, "steal the money") \~ "moral", str_detect(stimulus, "pocketed the money") \~ "immoral", TRUE \~ NA_character\_ )) %\>%
+
+\# Propagate 'condition' values downward to fill in any gaps fill(condition, .direction = "down") %\>%
+
+\# Organize data by 'subject_id' for subject-specific processing group_by(subject_id) %\>%
+
+\# Create an attention check column using the last row's response data mutate(attention_check = if_else( row_number() == n(), \# If this is the last row for the participant str_extract(response, '"Q0":\\d+') %\>% \# Extract the key-value pair for "Q0" str_extract("\\d+\$"), \# Extract the numeric value NA_character\_ )) %\>%
+
+\# Remove the groupings to finalize the attention check column ungroup() %\>%
+
+\# Convert 'attention_check' to numeric type mutate(attention_check = as.numeric(attention_check)) %\>%
+
+\# Spread attention check values throughout all rows fill(attention_check, .direction = "downup")
+
+# Parse 'response' column and annotate target information
+
+expanded_data \<- processed_data %\>% \# Convert the JSON-formatted response data into structured format mutate(parsed_response = map(response, \~ fromJSON(.) %\>% as.data.frame())) %\>%
+
+\# Unpack the parsed response data into separate columns unnest(cols = parsed_response) %\>%
+
+\# Add a 'target' column to label data for Justin and Nate mutate( target = case_when( row_number() %% 2 == 1 \~ "Justin", \# Justin for odd-numbered rows TRUE \~ "Nate" \# Nate for even-numbered rows ) )
+
+# Transform data to a long format and generate a combined identifier
+
+reshaped_data \<- expanded_data %\>% pivot_longer( cols = starts_with("Q"), \# Columns like Q0, Q1, etc. names_to = "question", \# Name for question identifier values_to = "response_value" \# Name for response values ) %\>% \# Create a 'question_value' column by combining target and question identifiers mutate(question_value = paste(target, question, sep = "\_")) %\>% \# Drop extraneous columns select(-target, -question, -response, -stimulus)
+
+# Include only participants who successfully passed the attention check
+
+valid_data \<- reshaped_data %\>% filter(attention_check == 0)
+
+# Identify participants who met all attention check criteria
+
+eligible_subjects \<- valid_data %\>% filter( (question_value == "Justin_Q0" & response_value == 1) \| (question_value == "Nate_Q0" & response_value == 0) ) %\>% distinct(subject_id) %\>% \# Get unique subject IDs pull(subject_id)
 
 ### Confirmatory analysis
 
