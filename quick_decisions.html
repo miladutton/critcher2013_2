@@ -20,6 +20,22 @@
         const subject_id = jsPsych.randomization.randomID(10);
         const condition = Math.random() < 0.5 ? 'moral' : 'immoral';
 
+        const informedConsent = {
+            type: jsPsychHtmlKeyboardResponse,
+            stimulus: `<h1 class="story-text">Informed Consent</h1>
+                       <p class="story-text">Thank you for participating in this study. Your responses will help us understand how people perceive decision-making in moral scenarios.</p>
+                       <p class="story-text"><strong>What to Expect:</strong></p>
+                       <p class="story-text">You will read a short story about two characters, Justin and Nate, and answer questions about their decisions and your impressions. This will take approximately 10 minutes. Your responses are anonymous and will only be used for research purposes.</p>
+                       <p class="story-text"><strong>Risks and Benefits:</strong></p>
+                       <p class="story-text">There are no known risks associated with this study, and no direct benefits to you. Your participation will contribute to advancing research in moral psychology.</p>
+                       <p class="story-text"><strong>Voluntary Participation:</strong></p>
+                       <p class="story-text">Participation is voluntary. You may choose to withdraw at any time without penalty.</p>
+                       <p class="story-text"><strong>Contact Information:</strong></p>
+                       <p class="story-text">If you have questions, please contact Bria Long at [brlong@ucsd.edu]. For concerns about your rights as a participant, you may contact [IRB@ucsd.edu ].</p>
+                       <p class="story-text"><strong>Consent Statement:</strong></p>
+                       <p class="story-text">By pressing any key to continue, you indicate that you have read and understood the information above and consent to participate in this study.</p>`
+        };
+
         const welcomeMessage = {
             type: jsPsychHtmlKeyboardResponse,
             stimulus: `<h1 class="story-text">Welcome to the Moral Decision-Making Study</h1>
@@ -140,11 +156,22 @@
             stimulus: `
                 <h1 class="story-text">Thank you for participating!</h1>
                 <p class="story-text">We greatly appreciate your time and input. Your responses will help us understand decision-making in moral scenarios.</p>
-                <p class="story-text">Press any key to finish the experiment.</p>`,
-            choices: "ALL_KEYS"
+                <p class="story-text">Click the button below to confirm your participation on Prolific.</p>
+                <button id="redirect-button" style="font-size: 16px; padding: 10px 20px; cursor: pointer;">
+                    Confirm Participation
+                </button>
+            `,
+            choices: "NO_KEYS", // Prevent participants from skipping this screen with keys
+            on_load: () => {
+                document.getElementById('redirect-button').addEventListener('click', function() {
+                    window.location.href = "https://app.prolific.com/submissions/complete?cc=CR4YGAG9";
+                });
+            }
         };
 
+
         const timeline = [
+            informedConsent,
             welcomeMessage,
             storyPresentation,
             createCharacterQuestions("Justin"),
@@ -158,3 +185,5 @@
     </script>
 </body>
 </html>
+
+
