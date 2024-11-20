@@ -18,9 +18,31 @@ Critcher, Inbar, and Pizarro (2012) found that the speed of decision-making play
 
 \[Original Paper\] (https://github.com/carolineporche1/critcher2012/blob/main/original_paper/How_quick_decisions_illuminate_moral_cha.pdf)
 
+\[Paradigm\] (<https://ucsd-psych201a.github.io/critcher2013_2/quick_decisions.html>)
+
 ## Methods
 
 ### Power Analysis
+
+#### Moral Character Evaluations
+
+A significant main effect of decision type (*F*(1, 117) = 541.52, *p* \< .001) showed that Justin, who made a quick decision (*M* = 6.44, *SE* = .08), was perceived differently than Nate (*M* = 2.15, *SE* = .12). Additionally, the moral nature of the decision significantly influenced character evaluations (*F*(1, 117) = 127.07, *p* \< .001), with returning the wallet regarded as more morally favorable.
+
+#### Decision Speed and Emotional Impulsivity
+
+Justin was perceived as less emotionally impulsive (*M* = 2.40, *SE* = .11) compared to Nate (*M* = 3.79, *SE* = .12), (*F*(1, 117) = 95.26, *p* \< .001). However, this difference in emotional impulsivity did not influence moral evaluations (*t* \< 1).
+
+#### Decision Speed and Moral Evaluation Polarization
+
+A significant interaction between decision type and speed was observed (*F*(1, 117) = 127.07, *p* \< .001). Quick immoral decisions led to more negative evaluations (*t*(54) = 8.28, *p* \< .001), while quick moral decisions resulted in more positive evaluations (*t*(63) = 7.71, *p* \< .001).
+
+#### Certainty as a Mediator
+
+Quick decisions were associated with higher certainty (*F*(1, 117) = 706.6, *p* \< .001). Certainty mediated the relationship between decision speed and moral evaluation, with greater certainty explaining more negative evaluations for immoral decisions and more positive evaluations for moral decisions.
+
+#### Power Analysis and Sample Size
+
+We planned to perform power analyses to determine the sample sizes needed to achieve 80%, 90%, and 95% power for detecting effect sizes from the original study. However, the original study did not report exact effect sizes, mean differences, or error bars. As a result, effect sizes could not be calculated, and sample sizes could not be determined using this methodology. Given the original study's sample size of 119 participants, we followed the standard practice of multiplying the sample size by 2.5, resulting in a target sample size of 298 participants.
 
 ### Planned Sample
 
