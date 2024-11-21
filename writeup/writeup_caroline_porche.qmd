@@ -46,7 +46,7 @@ We planned to perform power analyses to determine the sample sizes needed to ach
 
 ### Planned Sample
 
-Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.
+The planned sample size is 298.
 
 ### Materials
 
