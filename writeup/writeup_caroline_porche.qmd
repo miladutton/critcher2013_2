@@ -161,49 +161,89 @@ temp_data %>% mutate(subject_id = id, .before = 1)
 
 # Make sure 'processed_data' is correctly defined
 
-processed_data \<- merged_data %\>% \# Keep essential columns: subject ID, response time, stimulus, and response select(subject_id, rt, stimulus, response) %\>%
+# Keep essential columns and create 'processed_data'
+processed_data <- combined_data %>%
+  select(subject_id, rt, stimulus, response) %>%
+  
+  # Add 'condition' column based on stimulus content
+  mutate(condition = case_when(
+    str_detect(stimulus, "steal the money") ~ "moral",
+    str_detect(stimulus, "pocketed the money") ~ "immoral",
+    TRUE ~ NA_character_
+  )) %>%
+  
+  # Propagate 'condition' values downward to fill in any gaps
+  fill(condition, .direction = "down") %>%
+  
+  # Organize data by 'subject_id'
+  group_by(subject_id) %>%
+  
+  # Add attention check based on the last row's response
+  mutate(attention_check = if_else(
+    row_number() == n(),
+    str_extract(response, '"Q0":\\d+') %>% str_extract("\\d+$"),
+    NA_character_
+  )) %>%
+  
+  ungroup() %>%
+  mutate(attention_check = as.numeric(attention_check)) %>%
+  fill(attention_check, .direction = "downup")
 
-\# Add a 'condition' column based on specific stimulus content mutate(condition = case_when( str_detect(stimulus, "steal the money") \~ "moral", str_detect(stimulus, "pocketed the money") \~ "immoral", TRUE \~ NA_character\_ )) %\>%
-
-\# Propagate 'condition' values downward to fill in any gaps fill(condition, .direction = "down") %\>%
-
-\# Organize data by 'subject_id' for subject-specific processing group_by(subject_id) %\>%
-
-\# Create an attention check column using the last row's response data mutate(attention_check = if_else( row_number() == n(), \# If this is the last row for the participant str_extract(response, '"Q0":\\d+') %\>% \# Extract the key-value pair for "Q0" str_extract("\\d+\$"), \# Extract the numeric value NA_character\_ )) %\>%
-
-\# Remove the groupings to finalize the attention check column ungroup() %\>%
-
-\# Convert 'attention_check' to numeric type mutate(attention_check = as.numeric(attention_check)) %\>%
-
-\# Spread attention check values throughout all rows fill(attention_check, .direction = "downup")
 
 # Parse 'response' column and annotate target information
 
-expanded_data \<- processed_data %\>% \# Convert the JSON-formatted response data into structured format mutate(parsed_response = map(response, \~ fromJSON(.) %\>% as.data.frame())) %\>%
+# Convert JSON-formatted response data into structured format
+expanded_data <- processed_data %>%
+  mutate(parsed_response = map(response, ~ fromJSON(.) %>% as.data.frame())) %>%
+  unnest(cols = parsed_response) %>%
+  
+  # Add a 'target' column to label data for Justin and Nate
+  mutate(target = case_when(
+    row_number() %% 2 == 1 ~ "Justin",
+    TRUE ~ "Nate"
+  ))
 
-\# Unpack the parsed response data into separate columns unnest(cols = parsed_response) %\>%
-
-\# Add a 'target' column to label data for Justin and Nate mutate( target = case_when( row_number() %% 2 == 1 \~ "Justin", \# Justin for odd-numbered rows TRUE \~ "Nate" \# Nate for even-numbered rows ) )
 
 # Transform data to a long format and generate a combined identifier
 
-reshaped_data \<- expanded_data %\>% pivot_longer( cols = starts_with("Q"), \# Columns like Q0, Q1, etc. names_to = "question", \# Name for question identifier values_to = "response_value" \# Name for response values ) %\>% \# Create a 'question_value' column by combining target and question identifiers mutate(question_value = paste(target, question, sep = "\_")) %\>% \# Drop extraneous columns select(-target, -question, -response, -stimulus)
+reshaped_data <- expanded_data %>%
+  pivot_longer(
+    cols = starts_with("Q"),
+    names_to = "question",
+    values_to = "response_value"
+  ) %>%
+  mutate(question_value = paste(target, question, sep = "_")) %>%
+  select(-target, -question, -response, -stimulus)
+
 
 # Include only participants who successfully passed the attention check
+valid_data <- reshaped_data %>%
+  filter(attention_check == 0)
 
-valid_data \<- reshaped_data %\>% filter(attention_check == 0)
+eligible_subjects <- valid_data %>%
+  filter(
+    (question_value == "Justin_Q0" & response_value == 1) |
+    (question_value == "Nate_Q0" & response_value == 0)
+  ) %>%
+  distinct(subject_id) %>%
+  pull(subject_id)
 
-# Identify participants who met all attention check criteria
+# Visualize the results
+ggplot(reshaped_data, aes(x = decision_speed, y = moral_character, fill = decision)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Interaction Between Decision Speed and Moral Character",
+       x = "Decision Speed",
+       y = "Moral Character Evaluation")
 
-eligible_subjects \<- valid_data %\>% filter( (question_value == "Justin_Q0" & response_value == 1) \| (question_value == "Nate_Q0" & response_value == 0) ) %\>% distinct(subject_id) %\>% \# Get unique subject IDs pull(subject_id)
 
 ### Confirmatory analysis
 
-The analyses were conducted as outlined in the analysis plan. Specifically, I used a two-way ANOVA to test the interaction between decision speed (quick vs. slow) and the decision (accept vs. reject) on moral character evaluations.
-
-Replicating the original experiment, the two-way ANOVA on the moral character evaluation composite confirmed that the effect of decision speed depends on their decision. As stated in the original article:
+model <- aov(moral_character ~ decision_speed * decision, data = reshaped_data)
+summary(model)
 
 > “Replicating Experiment 1, a two-way ANOVA on the moral character evaluation composite confirmed that the influence of decision speed depended on their decision, F(1, 549) = 16.08, p \< .001 (see Figure 1).”
+
+
 
 ### Exploratory analyses
 
