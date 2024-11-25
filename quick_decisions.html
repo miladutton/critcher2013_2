@@ -33,7 +33,9 @@
                
                         <p class="story-text">If you have questions about this project or if you have a research-related problem, you may contact the researcher(s), Dr. Bria Long, <a href="mailto:brlong@ucsd.edu">brlong@ucsd.edu</a>. If you have any questions concerning your rights as a research subject, you may contact the UC San Diego Office of IRB Administration at <a href="mailto:irb@ucsd.edu">irb@ucsd.edu</a> or 858-246-4777.</p>
                
-                        <p class="story-text">By participating in this research you are indicating that you are at least 18 years old, have read this consent form, and agree to participate in this research study. Please keep this consent form for your records.</p>`
+                        <p class="story-text">By participating in this research you are indicating that you are at least 18 years old, have read this consent form, and agree to participate in this research study. Please keep this consent form for your records.</p>
+                        
+                        <p class="story-text">When you are ready to begin, press any key to continue.</p>`
         };
 
 
@@ -72,8 +74,8 @@
             preamble: `<p class="story-text">Please answer the following question to confirm your attention during the story.</p>`,
             questions: [
                 {
-                    prompt: "What item did Justin and Nate find?",
-                    labels: ["A wallet", "A phone", "A watch", "A bag"],
+                    prompt: "Who made their decision quickly?",
+                    labels: ["Justin", "Nate", "Both", "Neither"],
                     required: true
                 }
             ]
@@ -84,7 +86,7 @@
         type: jsPsychSurveyLikert,
         preamble: `<div class="story-text">${story}</div><h3 class="question-text">Questions about ${character}</h3>`,
         questions: [
-            // Quickness with two options
+            // Quickness - manipulation check
             { 
                 prompt: `Did ${character} make his decision quickly or slowly?`, 
                 labels: ["Slow", "Quick"], 
