@@ -1,0 +1,27 @@
+Quickness:
+
+Q0: Did [Character] make his decision quickly or slowly? (1 = particularly slowly, 7 = particularly quickly)
+
+Moral Character Evaluation:
+
+Q1: Regardless of [Character]'s decision, does it sound like [Character] has underlying moral principles that are good, bad, or somewhere in between? (1 = completely bad, 4 = mixed, 7 = completely good)
+
+Q2: Regardless of [Character]'s decision, do you think Justin has moral standards that are good, bad, or somewhere in between? (1 = completely bad, 4 = mixed, 7 = completely good)
+
+Q3: Regardless of [Character]'s decision, do you think Justin possesses the moral knowledge and principles necessary to do ‘the right thing’? (1 = not at all, 4 = somewhat, 7 = completely)
+
+Certainty:
+
+Q4: Would you say [Character] was quite certain in his decision, or did [Character] have hesitations about his or her decision? (1 = completely certain, 7 = considerable hesitations)
+
+Q5: How close do you think [Character] was to choosing the alternate course of action? (1 = very close to, 7 = not close at all)
+
+Q6: How conflicted do you think [Character] felt in making the decision? (1 = very conflicted, 7 = not at all conflicted)
+
+Q7: Based on the information provided, do you think [Character] had many reservations about the decision? (1 = none at all, 7 = a whole lot)
+
+Emotional impulsivity:
+
+Q8: Do you think [Character] was calm and emotionally contained while making the decision? (1 = not at all, 7 = entirely so)
+
+Q9: To what extent do you think [Character] became upset and acted without thinking? (1 = not at all, 7 = entirely so)
