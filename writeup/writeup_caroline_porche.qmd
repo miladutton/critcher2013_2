@@ -73,6 +73,8 @@ Participants will then be assigned to one of two conditions:
 
 Participants will be asked to rate how quickly each decision was made and evaluate the moral character, certainty, and impulsivity of both Justin and Nate. Randomization will be used to control for order effects.
 
+Following the initial study with five participants, the average completion time was 4.8 minutes.
+
 -   **Note**:
 
     -   This procedure was followed **precisely** as outlined in the original article without deviations.
@@ -228,12 +230,20 @@ eligible_subjects <- valid_data %>%
   distinct(subject_id) %>%
   pull(subject_id)
 
-# Visualize the results
-ggplot(reshaped_data, aes(x = decision_speed, y = moral_character, fill = decision)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  labs(title = "Interaction Between Decision Speed and Moral Character",
-       x = "Decision Speed",
-       y = "Moral Character Evaluation")
+# Visualize the results and Plot the Grouped Bar Chart
+ggplot(filtered_long_data, aes(x = decision, y = moral_character_evaluation, fill = speed)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.8), width = 0.7) +
+  labs(
+    title = "Moral Character Evaluation by Decision and Speed",
+    x = "Decision",
+    y = "Moral Character Evaluation"
+  ) +
+  scale_fill_manual(values = c("Quick" = "#8B008B", "Slow" = "#FF00FF")) + # Dark Purple and Magenta
+  theme_minimal() +
+  theme(
+    text = element_text(size = 14),
+    legend.title = element_blank()
+  )
 
 
 ### Confirmatory analysis
