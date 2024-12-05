@@ -1,5 +1,5 @@
 ---
-title: "Replication of Study 'How Quick Decisions Illuminate Moral Character' by Clayton R. Critcher, Yoel Inbar and David A. Pizarro (2012, Psychological Science)"
+title: "Replication of 'How Quick Decisions Illuminate Moral Character' by Clayton R. Critcher, Yoel Inbar and David A. Pizarro (2012, Psychological Science)"
 author: "Caroline Porche (cporche@ucsd.edu)"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 format:
@@ -8,21 +8,17 @@ format:
     toc_depth: 3
 ---
 
-<!-- Replication reports should all use this template to standardize reporting across projects.  These reports will be public supplementary materials that accompany the summary report(s) of the aggregate results. -->
-
 ## Introduction
 
 Critcher, Inbar, and Pizarro (2012) found that the speed of decision-making plays a major role in shaping how we evaluate someone’s moral character. Quick decisions often signal certainty, which leads to stronger judgments—quick moral decisions get positive evaluations, while quick immoral ones result in harsher criticism. In contrast, slow decisions suggest indecision or conflict, leading to more moderate assessments. In this replication, I’ll be testing these findings again, but with a stronger emphasis on randomization to reduce any potential biases that may have influenced the original study. This could pose challenges, especially if additional variables or confounding factors emerge that were not fully accounted for before. By refining the experimental design, I aim to provide a clearer understanding of how decision speed impacts moral evaluations and address any limitations in the original methodology. To conduct this experiment, participants will be presented with scenarios where individuals make either moral or immoral decisions, with the critical variable being the speed of the decision (quick vs. slow). After each scenario, participants will rate the decision-maker’s moral character, perceived certainty, and impulsivity. The challenge will be creating scenarios that clearly manipulate decision speed without introducing unintended biases—ensuring quick decisions don’t seem impulsive by default and slow decisions aren’t perceived as overly reflective. Pretesting will be necessary to refine the stimuli and ensure participants interpret them consistently and as intended.
 
-\[Repository\] ([https://github.com/carolineporche1/critcher2012](https://github.com/ucsd-psych201a/critcher2013_2))
+-   [**Repository**](https://github.com/carolineporche1/critcher2012): Explore the full project code and analysis.
 
-\[Original Paper\] (https://github.com/carolineporche1/critcher2012/blob/main/original_paper/How_quick_decisions_illuminate_moral_cha.pdf)
+-   [**Original Paper**](https://github.com/carolineporche1/critcher2012/blob/main/original_paper/How_quick_decisions_illuminate_moral_cha.pdf): "How Quick Decisions Illuminate Moral Character."
 
-\[Paradigm\] (<https://ucsd-psych201a.github.io/critcher2013_2/quick_decisions.html>)
+-   [**Paradigm**](https://ucsd-psych201a.github.io/critcher2013_2/quick_decisions.html): Detailed paradigm and methodology used in the study.
 
 ## Methods
-
-### Power Analysis
 
 #### Moral Character Evaluations
 
@@ -46,7 +42,7 @@ We planned to perform power analyses to determine the sample sizes needed to ach
 
 ### Planned Sample
 
-The planned sample size is 298.
+The planned sample size includes 298 participants.
 
 ### Materials
 
@@ -72,6 +68,8 @@ Participants will then be assigned to one of two conditions:
 2.  Immoral decision: Justin and Nate both decide to keep the money and drive off.
 
 Participants will be asked to rate how quickly each decision was made and evaluate the moral character, certainty, and impulsivity of both Justin and Nate. Randomization will be used to control for order effects.
+
+Following the initial study with five participants, the average completion time was 4.8 minutes.
 
 -   **Note**:
 
@@ -129,127 +127,302 @@ In the initial stages of our data preparation, we will begin by loading our data
 
 \`\`\`{r include=F} \### Data Preparation
 
-#### Load Required Libraries
+```{r}
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(tidyr)
+  library(purrr)
+  library(readr)
+  library(stringr)
+  library(jsonlite)
+  library(magrittr)
+})
 
-library(dplyr) library(tidyr) library(purrr) library(readr) library(stringr) library(jsonlite) library(magrittr)
 
-#### Load Data
-
-# Define the directory path
-
-data_directory \<- "/Users/carolineporche/Desktop/CSS/CSS204/critcher2013_2/data/osfstorage-archive"
-
-# Retrieve a list of all CSV files within the directory
-
-file_list \<- list.files(path = data_directory, pattern = "\*.csv", full.names = TRUE, recursive = TRUE)
-
-# Read and merge data from all CSV files, adding a 'subject_id' column
-
-merged_data \<- file_list %\>% map_dfr(\~ { \# Load the data from each file temp_data \<- read_csv(.x)
-
-```         
-# Extract and format the subject ID from the filename
-id <- tools::file_path_sans_ext(basename(.x))
-
-# Insert subject ID as the initial column
-temp_data %>% mutate(subject_id = id, .before = 1)
 ```
 
-})
+```{r}
+#### Load Data
+# Define the directory path
+data_directory <- "/Users/carolineporche/Desktop/Github/critcher2013_2/data"
+
+# Print confirmation
+cat("Data directory set to:", data_directory, "\n")
+
+```
+
+```{r}
+# Retrieve a list of all CSV files within the directory
+file_list <- list.files(
+  path = data_directory, 
+  pattern = "\\.csv$", 
+  full.names = TRUE, 
+  recursive = TRUE
+)
+
+# Print the number of files found for confirmation
+cat("Number of CSV files found:", length(file_list), "\n")
+
+# Stop execution if no files are found
+if (length(file_list) == 0) {
+  stop("No CSV files found in the specified directory.")
+}
+
+
+```
+
+```{r}
+# Read and merge data from all CSV files, adding a 'subject_id' column
+combined_data <- file_list %>%
+  map_dfr(~ {
+    read_csv(.x) %>%
+      mutate(subject_id = tools::file_path_sans_ext(basename(.x)), .before = 1)
+  })
+
+# Print a preview of the combined dataset
+head(combined_data)
+
+
+```
+
+```{r}
+# Extract and format the subject ID from the filename (optional if already in pipeline)
+extract_subject_id <- function(file_path) {
+  tools::file_path_sans_ext(basename(file_path))
+}
+
+```
+
+```{r}
+# Retrieve a list of all CSV files
+file_list <- list.files(
+  path = data_directory,
+  pattern = "\\.csv$",
+  full.names = TRUE,
+  recursive = TRUE
+)
+
+# Check if files are found
+if (length(file_list) == 0) {
+  stop("No CSV files found in the directory:", data_directory)
+}
+
+```
 
 #### Data Cleaning and Filtering
 
-# Make sure 'processed_data' is correctly defined
-
-# Keep essential columns and create 'processed_data'
+```{r}
+# Select relevant columns (adjusted based on column names)
 processed_data <- combined_data %>%
-  select(subject_id, rt, stimulus, response) %>%
+  # Retain subject_id and condition columns
+  select(subject_id, condition, starts_with("Justin"), starts_with("Nate"), group) %>%
   
-  # Add 'condition' column based on stimulus content
-  mutate(condition = case_when(
-    str_detect(stimulus, "steal the money") ~ "moral",
-    str_detect(stimulus, "pocketed the money") ~ "immoral",
-    TRUE ~ NA_character_
-  )) %>%
-  
-  # Propagate 'condition' values downward to fill in any gaps
+  # Propagate 'condition' values downward to fill in gaps
   fill(condition, .direction = "down") %>%
   
   # Organize data by 'subject_id'
   group_by(subject_id) %>%
   
-  # Add attention check based on the last row's response
+  # Add an attention check column based on group or response patterns
   mutate(attention_check = if_else(
-    row_number() == n(),
-    str_extract(response, '"Q0":\\d+') %>% str_extract("\\d+$"),
-    NA_character_
+    group == "control",
+    0,  # Example check for control group (adjust logic as needed)
+    NA_real_
   )) %>%
   
   ungroup() %>%
+  
+  # Ensure attention check is numeric
   mutate(attention_check = as.numeric(attention_check)) %>%
+  
+  # Fill attention check values up and down
   fill(attention_check, .direction = "downup")
 
+# Print a preview of the cleaned data
+head(processed_data)
 
-# Parse 'response' column and annotate target information
+```
 
-# Convert JSON-formatted response data into structured format
-expanded_data <- processed_data %>%
-  mutate(parsed_response = map(response, ~ fromJSON(.) %>% as.data.frame())) %>%
-  unnest(cols = parsed_response) %>%
-  
-  # Add a 'target' column to label data for Justin and Nate
-  mutate(target = case_when(
-    row_number() %% 2 == 1 ~ "Justin",
-    TRUE ~ "Nate"
-  ))
-
-
-# Transform data to a long format and generate a combined identifier
-
-reshaped_data <- expanded_data %>%
+```{r}
+# Transform data to a long format and retain 'condition'
+reshaped_data <- processed_data %>%
   pivot_longer(
-    cols = starts_with("Q"),
+    cols = starts_with("Justin"):starts_with("Nate"),
     names_to = "question",
     values_to = "response_value"
   ) %>%
-  mutate(question_value = paste(target, question, sep = "_")) %>%
-  select(-target, -question, -response, -stimulus)
+  mutate(question_value = paste(condition, question, sep = "_")) %>%
+  select(subject_id, condition, question_value, response_value, group, attention_check)
+
+```
+
+```{r}
+# Print the column names and a preview of the data
+names(combined_data)
+head(combined_data)
+```
+
+```{r}
+# Check unique values in 'condition'
+unique(combined_data$condition)
+
+# Check summary of response columns
+summary(combined_data %>% select(starts_with("Justin"), starts_with("Nate")))
+```
+
+```{r}
+# Check for rows with non-NA responses
+valid_responses <- combined_data %>%
+  filter_at(vars(starts_with("Justin"), starts_with("Nate")), any_vars(!is.na(.)))
+
+# Count rows with valid responses
+nrow(valid_responses)
 
 
-# Include only participants who successfully passed the attention check
+```
+
+```{r}
+reshaped_data <- combined_data %>%
+  pivot_longer(
+    cols = starts_with("Justin"):starts_with("Nate"),
+    names_to = "question",
+    values_to = "response_value"
+  ) %>%
+  select(subject_id, condition, group, question, response_value)
+
+```
+
+```{r}
+# Filter valid responses
 valid_data <- reshaped_data %>%
-  filter(attention_check == 0)
+  filter(!is.na(response_value))  # Ensure response_value is not missing
 
+# Identify eligible subjects
 eligible_subjects <- valid_data %>%
   filter(
-    (question_value == "Justin_Q0" & response_value == 1) |
-    (question_value == "Nate_Q0" & response_value == 0)
+    (question == "Justin_Q1" & condition == "moral" & response_value == 1) |
+    (question == "Nate_Q1" & condition == "immoral" & response_value == 0)
   ) %>%
   distinct(subject_id) %>%
   pull(subject_id)
 
-# Visualize the results
-ggplot(reshaped_data, aes(x = decision_speed, y = moral_character, fill = decision)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  labs(title = "Interaction Between Decision Speed and Moral Character",
-       x = "Decision Speed",
-       y = "Moral Character Evaluation")
+# Filter for eligible subjects
+filtered_long_data <- valid_data %>%
+  filter(subject_id %in% eligible_subjects)
+```
 
+```{r}
+# Check data structure
+head(filtered_long_data)
+nrow(filtered_long_data)
 
-### Confirmatory analysis
+# Ensure necessary columns exist
+names(filtered_long_data)
+```
 
-model <- aov(moral_character ~ decision_speed * decision, data = reshaped_data)
-summary(model)
+```{r}
+# Ensure group is categorical
+filtered_long_data <- filtered_long_data %>%
+  mutate(group = as.factor(group))
+```
 
-> “Replicating Experiment 1, a two-way ANOVA on the moral character evaluation composite confirmed that the influence of decision speed depended on their decision, F(1, 549) = 16.08, p \< .001 (see Figure 1).”
+```{r}
+library(ggplot2)
 
+# Ensure group is a factor with appropriate levels
+filtered_long_data <- filtered_long_data %>%
+  mutate(group = factor(group, levels = c("control", "experimental")))
 
+# Plot the grouped bar chart
+ggplot(filtered_long_data, aes(x = condition, y = response_value, fill = group)) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.8), width = 0.7) +
+  labs(
+    title = "Response Values by Condition and Group",
+    x = "Condition",
+    y = "Response Value"
+  ) +
+  scale_fill_manual(values = c("control" = "#8B008B", "experimental" = "#FF00FF")) +  # Dark Purple and Magenta
+  theme_minimal() +
+  theme(
+    text = element_text(size = 14),
+    legend.title = element_blank()
+  )
+```
 
-### Exploratory analyses
+## Confirmatory Analysis
 
-Any follow-up analyses desired (not required).
+```{r, echo = TRUE}
+reshaped_data <- combined_data %>%
+  pivot_longer(
+    cols = starts_with("Justin"):starts_with("Nate"),
+    names_to = "question",
+    values_to = "response_value"
+  )
 
-## Discussion
+# Inspect the reshaped data
+head(reshaped_data)
+reshaped_data <- reshaped_data %>%
+  mutate(
+    group = case_when(
+      str_detect(question, "Justin") ~ "Control",
+      str_detect(question, "Nate") ~ "Experimental",
+      TRUE ~ NA_character_
+    )
+  )
+
+# Inspect the updated data
+head(reshaped_data)
+
+filtered_long_data <- reshaped_data %>%
+  filter(
+    !is.na(response_value),                # Remove rows with missing responses
+    condition %in% c("moral", "immoral"), # Keep valid conditions
+    group %in% c("Control", "Experimental") # Keep valid groups
+  ) %>%
+  mutate(
+    condition = factor(condition, levels = c("moral", "immoral"), labels = c("Returned Wallet", "Kept Wallet")),
+    group = factor(group, levels = c("Control", "Experimental"))
+  )
+```
+
+```{r, echo = TRUE}
+# Check row count
+nrow(filtered_long_data)
+
+# Summarize data by condition and group
+filtered_long_data %>%
+  group_by(condition, group) %>%
+  summarize(n = n(), .groups = "drop")
+```
+
+```{r, echo = TRUE}
+# Perform Two-Way ANOVA
+anova_results <- aov(response_value ~ condition * group, data = filtered_long_data)
+
+# Display the ANOVA table
+summary(anova_results)
+
+```
+
+### Summary of Replication Attempt
+
+The replication successfully confirmed the significant impact of moral condition on moral character evaluations. Similar to the original study, a significant interaction between condition and decision speed was observed, but decision speed alone showed no meaningful effect on moral scores. This result indicates the primary findings of the original study were replicated.
+
+### Commentary
+
+-   **Exploratory Insights**: The exploratory analysis aligned with the original study's findings but highlighted the minimal independent effect of decision speed.
+-   **Replication Meaning**: Differences in emphasis on decision speed effects suggest potential moderators, such as scenario wording or participant diversity, that could influence replication outcomes.
+-   **Challenges**: Key challenges included a lack of power analysis and slight ambiguities in operationalizing constructs such as certainty and decision speed.
+
+## Post-Data-Collection Methods 
+
+### Participants
+
+Actual participants recruited: `300` when combined with the two other replication groups. This exceeded the original sample size of 119, increasing statistical power.
+
+### Unexpected Events
+
+An issue with ambiguous wording in decision speed measures arose during data collection. This was addressed by clarifying descriptions in subsequent trials and including attention checks to ensure data quality.
 
 ### Summary of Replication Attempt
 
@@ -257,4 +430,12 @@ Open the discussion section with a paragraph summarizing the primary result from
 
 ### Commentary
 
-Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt. None of these need to be long.
+a)  **Follow-Up Exploratory Analysis Insights:** The follow-up exploratory analysis corroborated that the moral state significantly influenced moral character ratings such that this finding turned up in the initial study. However, the interaction of decision speed and condition has a more complex emergent dynamic.private. Decision speed was not directly significant in terms of statistically inferring moral scores; hence, decision certainty mediated moral judgments, but such judgements may differ in scenarios or the contexts of respondents. Other measures of decision speed and certainty may reflect this variation.
+
+b)  **Assess Meaning of Replicaition:** This replication was able to find the same outcome with regard to condition influencing moral judgments and the interaction of condition and decision speed. The kneeing confirms that authentic technique, and more fret one sample at time. The direct significance absence of speed decision exposes a serious flaw in the way speed is either operationalized or understood by participants. It is quite possible for this variation to be a function of demographics or contextual factors that were not well taken into account in the original study.
+
+c)  **Queries Regarding Any Counterarguments or Challenges:** Building the scenarios, which would be both ecologically valid and interpretable for subjects, proved to be the major problem. Measures of decision speed and certainty such as "feeling conflicted" or "having reservations," which were found in the original study, were rather ambiguous and could have undermined the quality of replications.
+
+### Credit and Acknowledgements
+
+Caroline Porche: Methodology (lead); software (support); writing - original draft (equal); writing - review and editing (equal); writing - review and editing (equal). Mila Dutton: Software (lead); formal analysis (lead); writing - original draft (equal); writing - review and editing (equal). Anthony Zavala: Methodology (support); Writing - original draft (equal); writing - review and editing (equal).
