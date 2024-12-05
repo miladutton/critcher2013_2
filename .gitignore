@@ -49,7 +49,7 @@ po/*~
 rsconnect/
 
 # ignore all CSVs
-*.csv
+#*.csv
 # unless they end with -anon
 !*-anon.csv
 
