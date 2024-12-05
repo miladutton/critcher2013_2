@@ -1,5 +1,5 @@
 ---
-title: "Replication of Study 'How Quick Decisions Illuminate Moral Character' by Clayton R. Critcher, Yoel Inbar and David A. Pizarro (2012, Psychological Science)"
+title: "Replication of 'How Quick Decisions Illuminate Moral Character' by Clayton R. Critcher, Yoel Inbar and David A. Pizarro (2012, Psychological Science)"
 author: "Caroline Porche (cporche@ucsd.edu)"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 format:
@@ -351,7 +351,7 @@ ggplot(filtered_long_data, aes(x = condition, y = response_value, fill = group))
 
 ## Confirmatory Analysis
 
-```{r}
+```{r, echo = TRUE}
 reshaped_data <- combined_data %>%
   pivot_longer(
     cols = starts_with("Justin"):starts_with("Nate"),
@@ -385,7 +385,7 @@ filtered_long_data <- reshaped_data %>%
   )
 ```
 
-```{r}
+```{r, echo = TRUE}
 # Check row count
 nrow(filtered_long_data)
 
@@ -395,7 +395,7 @@ filtered_long_data %>%
   summarize(n = n(), .groups = "drop")
 ```
 
-```{r}
+```{r, echo = TRUE}
 # Perform Two-Way ANOVA
 anova_results <- aov(response_value ~ condition * group, data = filtered_long_data)
 
@@ -403,7 +403,6 @@ anova_results <- aov(response_value ~ condition * group, data = filtered_long_da
 summary(anova_results)
 
 ```
-
 
 ### Summary of Replication Attempt
 
@@ -415,7 +414,7 @@ The replication successfully confirmed the significant impact of moral condition
 -   **Replication Meaning**: Differences in emphasis on decision speed effects suggest potential moderators, such as scenario wording or participant diversity, that could influence replication outcomes.
 -   **Challenges**: Key challenges included a lack of power analysis and slight ambiguities in operationalizing constructs such as certainty and decision speed.
 
-## Post-Data-Collection Methods Addendum
+## Post-Data-Collection Methods 
 
 ### Participants
 
@@ -425,18 +424,18 @@ Actual participants recruited: `300` when combined with the two other replicatio
 
 An issue with ambiguous wording in decision speed measures arose during data collection. This was addressed by clarifying descriptions in subsequent trials and including attention checks to ensure data quality.
 
-### Analysis Code
-
-\`\`\`{r echo=T} \# Data cleaning and processing data_clean \<- data %\>% filter(!is.na(variable)) %\>% mutate(new_variable = variable1 + variable2)
-
-# Preview results
-
-head(data_clean)
-
 ### Summary of Replication Attempt
 
 Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.
 
 ### Commentary
 
-Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt. None of these need to be long.
+a)  **Follow-Up Exploratory Analysis Insights:** The follow-up exploratory analysis corroborated that the moral state significantly influenced moral character ratings such that this finding turned up in the initial study. However, the interaction of decision speed and condition has a more complex emergent dynamic.private. Decision speed was not directly significant in terms of statistically inferring moral scores; hence, decision certainty mediated moral judgments, but such judgements may differ in scenarios or the contexts of respondents. Other measures of decision speed and certainty may reflect this variation.
+
+b)  **Assess Meaning of Replicaition:** This replication was able to find the same outcome with regard to condition influencing moral judgments and the interaction of condition and decision speed. The kneeing confirms that authentic technique, and more fret one sample at time. The direct significance absence of speed decision exposes a serious flaw in the way speed is either operationalized or understood by participants. It is quite possible for this variation to be a function of demographics or contextual factors that were not well taken into account in the original study.
+
+c)  **Queries Regarding Any Counterarguments or Challenges:** Building the scenarios, which would be both ecologically valid and interpretable for subjects, proved to be the major problem. Measures of decision speed and certainty such as "feeling conflicted" or "having reservations," which were found in the original study, were rather ambiguous and could have undermined the quality of replications.
+
+### Credit and Acknowledgements
+
+Caroline Porche: Methodology (lead); software (support); writing - original draft (equal); writing - review and editing (equal); writing - review and editing (equal). Mila Dutton: Software (lead); formal analysis (lead); writing - original draft (equal); writing - review and editing (equal). Anthony Zavala: Methodology (support); Writing - original draft (equal); writing - review and editing (equal).
