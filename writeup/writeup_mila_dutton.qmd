@@ -497,7 +497,9 @@ print(plot)
 
 Above are the plotted results for the combined sample, n=207.
 
-![Graph from Original Paper](images/original_graph.png){width="500"}
+![](images/compare-02.png)
+
+Comparison of replicated and original graph.
 
 ### Exploratory analyses
 
