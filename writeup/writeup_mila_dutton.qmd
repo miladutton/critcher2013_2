@@ -8,13 +8,11 @@ format:
     toc_depth: 3
 ---
 
-<!-- Replication reports should all use this template to standardize reporting across projects.  These reports will be public supplementary materials that accompany the summary report(s) of the aggregate results. -->
-
 ## Introduction
 
-This paper examines how the speed in making moral decisions can shape how others view as, as well as how we assess our own actions. This is a topic that has always been fascinating to me, especially as a psychology undergrad major, with experience researching cognition. The intersection between decision making and moral cognition touches on the core psychological questions regarding ethics, thought process, and social environments.
+This paper examines how the speed in making moral decisions can shape how others view as, as well as how we assess our own actions. The intersection between decision making and moral cognition touches on the core psychological questions regarding ethics, thought process, and social environments.
 
-The experiment will follow the structure of the original study by having participants read stories regarding making moral decisions at varying speeds. In experiment 1, two men find separate wallets in a parking lot. One man immediately decides what to do with the wallet while the other decides after a "long and careful deliberation". In the moral condition, both men turn the wallet in, and in the immoral decision both men keep the wallet. Participants are then given questionnaires in which they rank the following sets: quickness, moral character evaluation, certainty, and emotional impulsivity. Experiment 2 follows a similar structure but is between subjects. The story depicts a single mother who is struggling to afford her son. Her boss offers to adopt her son and in return will triple her salary. She is described as either taking 3 seconds or 3 days to come to a decision, and her decision was independently varied. Participants will then use the same scales as well as two additional scales in which they rank her motives to "get more money" and "protect her child". In our study, we only replicated experiment 1. A two way ANOVA test was run to assess decision speed and type of decision, and a regression analysis was run to further explore relationships between certainty and morality.
+The experiment will follow the structure of the original study by having participants read stories regarding making moral decisions at varying speeds. In experiment 1, two men find separate wallets in a parking lot. One man immediately decides what to do with the wallet while the other decides after a "long and careful deliberation". In the moral condition, both men turn the wallet in, and in the immoral decision both men keep the wallet. Participants are then given questionnaires in which they rank the following sets: quickness, moral character evaluation, certainty, and emotional impulsivity. In this study, I only replicated experiment 1. For analysis, A two way ANOVA test was run to assess decision speed and type of decision.
 
 A potential challenge is that I do not have experience with this type of data analysis so it will definitely be a learning curve. I am confident in my ability to learn, but I am sure it will take a bit to feel confident doing so.
 
@@ -28,7 +26,7 @@ A potential challenge is that I do not have experience with this type of data an
 
 ### Power Analysis
 
-The original study utilizes a series of analyses to determine whether decision speed impacts moral character perception.
+The original study utilizes a series of analyses to determine the interaction between dependent and independent variables.
 
 -   **Decision on Moral Character:** A significant main effect of decision type (F(1, 117) = 541.52, p \< .001) revealed that Justin, who decided quickly (M = 6.44, SE = .08), was perceived differently from Nate (M = 2.15, SE = .12). Moral decision also influenced character evaluation (F(1, 117) = 127.07, p \< .001), with returning the wallet seen as morally better.
 
@@ -38,25 +36,25 @@ The original study utilizes a series of analyses to determine whether decision s
 
 -   **Certainty as a Mediator:** Quick decisions were associated with higher certainty (F(1, 117) = 706.6, p \< .001). Certainty mediated the relationship between decision speed and moral evaluation, with greater certainty explaining more negative evaluations for immoral decisions and more positive evaluations for moral ones.
 
-We planned to perform power analyses to determine the sample sizes needed to achieve 80%, 90%, 95% power for detecting effect sizes from the original study. However, the original study did not give exact effect sizes, difference between means, or error bars. For that reason, we were unable to calculate effect size and determine sample size through that methodology. The original study had 119 participants, so we followed the standard practice of doing 2.5 times the original sample, leaving us with a sample size of 298.
+I planned to perform power analyses to determine the sample sizes needed to achieve 80%, 90%, 95% power for detecting effect sizes from the original study. However, the original study did not give exact effect sizes, difference between means, or error bars. For that reason, I was unable to perform a power analysis and determine sample size through that methodology.
 
 ### Planned Sample
 
-Based on the original studies findings, we plan to have a sample size of approximately 298 participants. This is 2.5 times the original sample size. The sampling frame will consist of individuals in the participant pool on the website JsPsych. The only preselection rule was that participants must be fluent in English.
+Based on the original studies findings, I planned to have a sample size of approximately 298 participants. This is 2.5 times the original sample size n = 119. However, due to funding I ended up doing 1/3 of that, with a sample size of n = 100, and the combining data with the other two groups who replicated the same study. The sampling frame consisted of individuals in the participant pool on the website Prolific. The only pre selection rule was that participants must be fluent in English and be approved for at least 98% of the studies they applied to.
 
 ### Materials
 
-Participants in this study were presented with a story focusing on two men, as outlined in the original article. Through reaching out to the original researchers, we were able to get access to their exact materials. The story was structured as follows.
+Participants in this study were presented with a story focusing on two men, as outlined in the original article. Through reaching out to the original researchers, I was able to get access to their exact materials. The story was structured as follows.
 
 "Justin and Nate were walking to separate cars in the parking lot of Andronico’s, a local grocery store, when they each spotted a different lost wallet next to their cars. Upon picking up the wallet and looking inside, each found several hundred dollars in cash. Each man considered whether he should return the wallet and money to the Customer Service desk at Andronico’s, or pocket the money and drive away."
 
-Moral Condition
+**Moral Condition**
 
 "Justin saw his decision as an easy one and was able to decide quickly. He did not steal the money and instead left the wallet with Customer Service."
 
 "In contrast, Nate saw his decision as difficult and was only able to decide after long and careful deliberation. After several minutes of thinking in his car, he too decided not to steal the money and instead left the wallet with Customer Service."
 
-Immoral Condition
+**Immoral Condition**
 
 "Justin saw his decision as an easy one and was able to decide quickly. He pocketed the money and drove off."
 
@@ -64,49 +62,53 @@ Immoral Condition
 
 Immediately following the description of Justin and Nate’s actions, participants answered a series of questions related to the men’s moral character evaluation. These questions were rated on a 1-7 scale. These questions were also taken directly from the original research.
 
--   **Quickness**:
+-   **Quickness (manipulation check)**:
 
-    -   Did \[Character\] make his decision quickly or slowly? (1 = particularly slowly, 7 = particularly quickly)
+    -   Q0: Did \[Character\] make his decision quickly or slowly? (1 = particularly slowly, 7 = particularly quickly)
 
 -   **Moral Character Evaluation**:
 
-    -   Regardless of \[Character\]'s decision, does it sound like \[Character\] has underlying moral principles that are good, bad, or somewhere in between? (1 = completely bad, 4 = mixed, 7 = completely good)
-    -   Regardless of \[Character\]'s decision, do you think Justin has moral standards that are good, bad, or somewhere in between? (1 = completely bad, 4 = mixed, 7 = completely good)
-    -   Regardless of \[Character\]'s decision, do you think Justin possesses the moral knowledge and principles necessary to do ‘the right thing’? (1 = not at all, 4 = somewhat, 7 = completely)
+    -   Q1: Regardless of \[Character\]'s decision, does it sound like \[Character\] has underlying moral principles that are good, bad, or somewhere in between? (1 = completely bad, 4 = mixed, 7 = completely good)
+    -   Q2: Regardless of \[Character\]'s decision, do you think Justin has moral standards that are good, bad, or somewhere in between? (1 = completely bad, 4 = mixed, 7 = completely good)
+    -   Q3: Regardless of \[Character\]'s decision, do you think Justin possesses the moral knowledge and principles necessary to do ‘the right thing’? (1 = not at all, 4 = somewhat, 7 = completely)
 
 -   **Certainty**:
 
-    -   Would you say \[Character\] was quite certain in his decision, or did \[Character\] have hesitations about his or her decision? (1 = completely certain, 7 = considerable hesitations)
-    -   How close do you think \[Character\] was to choosing the alternate course of action? (1 = very close to, 7 = not close at all)
-    -   How conflicted do you think \[Character\] felt in making the decision? (1 = very conflicted, 7 = not at all conflicted)
-    -   Based on the information provided, do you think \[Character\] had many reservations about the decision? (1 = none at all, 7 = a whole lot)
+    -   Q4: Would you say \[Character\] was quite certain in his decision, or did \[Character\] have hesitations about his or her decision? (1 = completely certain, 7 = considerable hesitations)
+    -   Q5: How close do you think \[Character\] was to choosing the alternate course of action? (1 = very close to, 7 = not close at all)
+    -   Q6: How conflicted do you think \[Character\] felt in making the decision? (1 = very conflicted, 7 = not at all conflicted)
+    -   Q7: Based on the information provided, do you think \[Character\] had many reservations about the decision? (1 = none at all, 7 = a whole lot)
 
 -   **Emotional impulsivity**:
 
-    -   Do you think Justin (or Nate) was calm and emotionally contained while making the decision? (1 = not at all, 7 = entirely so)
-    -   To what extent do you think Justin (or Nate) became upset and acted without thinking? (1 = not at all, 7 = entirely so)
+    -   Q8: Do you think \[Character\] was calm and emotionally contained while making the decision? (1 = not at all, 7 = entirely so)
+    -   Q9: To what extent do you think \[Character\] became upset and acted without thinking? (1 = not at all, 7 = entirely so)
+
+-   **Note**:
+
+    -   These materials were used **precisely** as outlined in the original article without deviations.
 
 ### Procedure
 
-Participants read about two men, Justin and Nate, who come upon separate cash-filled wallets in a grocery store parking lot. Justin “was able to decide quickly” what to do, while Nate “was only able to decide after long and careful deliberation.”
+-   Participants are randomly assigned to the moral or immoral decision.
 
-Participants read stories from one of the following conditions:
+    -   Moral decision: Justin and Nate both decide not to steal the money and return the wallets.
 
-1.  Moral decision: Justin and Nate both decide not to steal the money and return the wallets.
+    -   Immoral decision: Justin and Nate both decide to keep the money and drive off.
 
-2.  Immoral decision: Justin and Nate both decide to keep the money and drive off.
+-   Participants read about both Justin and Nate, who found wallets in the parking lot. "Justin 'was able to decide quickly' what to do. Nate 'was only able to decide after long and careful deliberation.'"
 
-    **Note**:
+-   Participants rate their quickness, moral character evaluation, certainty, and emotional impulsivity on a likert scale.
 
-    -   This procedure was followed **precisely** as outlined in the original article without deviations.
-
-After reading the story, they were presented with the questions where they evaluated the speed, moral character, certainty, and impulsivity of both Justin and Nate. An attention check was also added to the end of the questions, to ensure that participants were present in the study.
+-   Participants answer attention check to confirm their attention in the study.
 
 ### Analysis Plan
 
-To begin analysis, we cleaned the data by excluding participants with missing data. If participants failed the manipulation check or attention check, their data would also be excluded. To calculate the moral character evaluation composite score, we took the mean of the 3 moral character evaluation questions, and added that into the dataset. The final dataset used in analysis consisted only of: subject id, condition, character, decision speed, and moral score.
+The main focus of this study is to evaluate moral character judgments based on decision type and decision speed. After collecting the data, I excluded participants who met the exclusion criteria.
 
-The key analysis of interest is the effect of decision speed and decision type on moral character evaluation. This analysis helped confirm whether the original findings (that moral judgments are influenced by both the speed of the decision and the choice) are replicable in our sample.
+For the statistical analysis, my primary question of interest involved testing the effect of two factors (decision speed and decision type) on moral character judgments. A two-way ANOVA was conducted to evaluate the main effects and interaction effects, adjusting for all other variables in the model. Effect sizes, such as partial eta-squared, were calculated to interpret the magnitude of these effects.
+
+The results of the ANOVA were visualized using several approaches. Bar plots with error bars were used to compare mean moral scores across conditions, providing a clear depiction of differences between groups. Box plots highlighted the distribution of moral scores within each condition, revealing variability and potential outliers. Interaction plots illustrated how the relationship between decision speed and moral character evaluation varied across decision types, offering a visual representation of significant interaction effects. These methods allowed for a comprehensive and nuanced interpretation of the data.
 
 ### Design Overview
 
@@ -116,7 +118,7 @@ The key analysis of interest is the effect of decision speed and decision type o
 
 -   It was a within subjects design.
 
--   Measures were repeated.
+-   Measures were not repeated.
 
 -   There was no mention of steps taken to reduce demand characteristics.
 
@@ -124,32 +126,48 @@ The key analysis of interest is the effect of decision speed and decision type o
 
 ### Differences from Original Study
 
-The main difference from the original study is that we performed one experiment rather than two. Specifically, we replicated experiment 1.
+The main difference from the original study is that I performed one experiment rather than two. Specifically, I replicated experiment 1.
 
-Our participant pool was also different. The original paper included mainly undergraduate students at UC Berkeley, as well as members from the surrounding community. As we are not a part of that institution, our participants are not from that community. We conducted our study entirely online, unlike the original study, which did not specify whether participants were tested in a lab or online. Using JsPsych, we did not impose any regional restrictions, which meant we couldn’t control the exact environment in which participants completed the study. Lastly, we added an attention check at the end of the questions which the original study did not have. This was to ensure that participants were not just clicking through, and to help minimize bots. These differences are not expected to make a difference in obtaining the effect.
+The participant pool was also different. The original paper included mainly undergraduate students at UC Berkeley, as well as members from the surrounding community. As I am not a part of that institution, my participants were not from that community. I conducted this study entirely online, unlike the original study, which did not specify whether participants were tested in a lab or online. Using Prolific, I did not impose any regional restrictions, which meant I could not control the exact environment in which participants completed the study.
+
+Lastly, I added an attention check at the end of the questions which the original study did not have. This was to ensure that participants were not just clicking through, and to help minimize bots. These differences were not expected to make a difference in obtaining the effect.
 
 ### Methods Addendum (Post Data Collection)
 
-You can comment this section out prior to final report with data collection.
+After collecting and cleaning my data, I decided to perform effect size analysis. This was not in my original plan and the original paper did not clearly mention this process. However, I performed this analysis to provide more insight into the relationship between decision type, decision speed, and moral character evaluation.
+
+After collecting and cleaning my data, I decided to handle missing values through list wise deletion. This approach, which removes participants with missing data for any variable included in the analysis, was not part of my original plan but was implemented to maintain a consistent data set for all statistical tests. While this method reduced the sample size slightly, it ensured that all analyses were conducted on complete cases, preserving the validity of the results.
 
 #### Actual Sample
 
-Sample size, demographics, data exclusions based on rules spelled out in analysis plan
+After cleaning the data and excluding invalid participants, I had a sample size of n = 96. After combing my data with the other groups and cleaning it, I had a final sample size of n = 207. I did not collect any demographic information.
 
 #### Differences from pre-data collection methods plan
 
-Any differences from what was described as the original plan, or “none”.
+None.
 
 ## Results
 
 ### Data preparation
 
-To prepare the dataset for analysis, we began by thoroughly cleaning the data. Entries with missing values were removed to maintain data integrity. Additionally, any responses that did not pass attention checks were excluded to ensure high data quality. Outliers were identified and assessed; if they proved to be problematic they were also removed. After these steps, we ensured the dataset was correctly formatted, providing a solid foundation for the analysis phase.
+To prepare the data set for analysis, I implemented a detailed cleaning process to ensure its integrity and reliability. A manual check for missing values were removed to maintain data quality, however none were found. Participants who met any one part the exclusion criteria were also removed.
+
+The exclusion criteria is as follows:
+
+-   Failed the manipulation check
+
+-   Failed the attention check
+
+-   Completed the study in less than 1.5 minutes
+
+-   Had the same response to every question
+
+A condition column was added to categorize scenarios into moral or immoral decisions. Responses were parsed to extract structured data from JSON format, handling invalid responses to avoid errors. The data set was then reshaped into a long format, which allowed for easier analysis. Composite scores for moral evaluations were calculated for each character, providing a clear and structured summary of the data. These steps ensured the data set was properly formatted, high-quality, and ready for statistical analysis and visualization.
+
+My data set was then combined with the data from the other two groups. Due to different cleaning techniques some of the original structure from my data set was lost in integration with the new one. This new combined data set had missing values, so those were dropped. The Mean moral composite score was recalculated again and columns for speed and character were added.
 
 ```{r echo = TRUE, message = FALSE, warning = FALSE}
-### Data Preparation
-
-#### Load Relevant Libraries and Functions
+# Load required libraries
 library(dplyr)
 library(tidyr)
 library(purrr)
@@ -157,124 +175,133 @@ library(readr)
 library(stringr)
 library(jsonlite)
 library(magrittr)
+library(ggplot2)
+library(effectsize)
 
-#### Import data
-# Set the path to the folder
-folder_path <- "/Users/miladutton/Desktop/CSS/CSS204/critcher2013_2/data/osfstorage-archive"
-
-# List all CSV files in the folder
+# Step 1: Import and Combine Data
+# Read all CSV files from the specified folder, extract subject IDs from file names,
+# and combine them into one data frame.
+folder_path <- "/Users/miladutton/Desktop/CSS/CSS204/critcher2013_2/data/participant_data"
 csv_files <- list.files(path = folder_path, pattern = "*.csv", full.names = TRUE, recursive = TRUE)
 
-# Update combined_data by reading and combining all CSV files with subject_id column at the front
 combined_data <- csv_files %>%
   map_dfr(~ {
-    # Read each file
     data <- read_csv(.x)
-    
-    # Extract the subject ID from the file name (remove directory path and ".csv" extension)
-    subject_id <- tools::file_path_sans_ext(basename(.x))
-    
-    # Add subject_id as the first column
-    data %>% mutate(subject_id = subject_id, .before = 1)
+    subject_id <- tools::file_path_sans_ext(basename(.x))  # Extract subject ID from file name
+    data %>% mutate(subject_id = subject_id, .before = 1)  # Add subject ID as the first column
   })
 
-#### Data exclusion / filtering
-#### Prepare data for analysis - create columns etc..
+# Step 2: Filter Relevant Columns and Add Condition
+# 1. Group data by participant to calculate the maximum total time elapsed for each participant
+# 2. Add a column (`total_time_elapsed`) to store the total time elapsed per participant.
+# 3. Filter out participants whose total time elapsed is less than 1.5 minutes (90,000 ms).
+# 4. Select only relevant columns for analysis.
+# 5. Classify stimuli into conditions (moral or immoral) based on keywords in the stimulus text.
+# 6. Fill down condition labels for each participant to propagate the classification.
+
 cleaned_data <- combined_data %>%
-  # Select relevant columns: subject ID, response time (rt), stimulus, and response
-  select(subject_id, rt, stimulus, response) %>%
-  
-  # Create a 'condition' column based on the stimulus text
-  mutate(condition = case_when(
+  group_by(subject_id) %>%
+  mutate(total_time_elapsed = max(time_elapsed, na.rm = TRUE)) %>% # Step 1 and 2
+  ungroup() %>%
+  filter(total_time_elapsed > (1.5 * 60 * 1000)) %>% # Step 3
+  select(subject_id, rt, stimulus, response, time_elapsed) %>% # Step 4
+  mutate(condition = case_when( # Step 5
     str_detect(stimulus, "steal the money") ~ "moral",
     str_detect(stimulus, "pocketed the money") ~ "immoral",
-    TRUE ~ NA_character_ # Default to NA if no match is found
+    TRUE ~ NA_character_
   )) %>%
-  
-  # Fill down missing 'condition' values to propagate them
-  fill(condition, .direction = "down") %>%
-  
-  # Group by 'subject_id' for operations specific to each subject
-  group_by(subject_id) %>%
-  
-  # Add the attention check as a new column (extract Q0 value from the last row for each subject)
-  mutate(attention_check = if_else(
-    row_number() == n(), # Check if it's the last row for the participant
-    str_extract(response, '"Q0":\\d+') %>% # Extract the "Q0" key-value pair
-      str_extract("\\d+$"),  # Extract the numeric value after "Q0"
-    NA_character_ # Otherwise, set to NA
-  )) %>%
-  
-  # Remove the grouping after creating the attention check column
-  ungroup() %>%
-  
-  # Convert the attention check column to numeric
-  mutate(attention_check = as.numeric(attention_check)) %>%
-  
-  # Fill down and up to propagate the attention_check value across rows
-  fill(attention_check, .direction = "downup") %>%
-  
-  # Filter out rows where 'response' contains only the attention check
-  filter(!is.na(response) & nchar(response) > 10)
+  fill(condition, .direction = "down")
 
-# Parse the response column and assign targets
+# Step 3: Extract Attention Check
+# Identify and extract attention check responses for each participant, 
+# filling them across rows within each subject group.
+cleaned_data <- cleaned_data %>%
+  group_by(subject_id) %>%
+  mutate(attention_check = if_else(
+    row_number() == n() & str_detect(response, '"Q0":'),
+    str_extract(response, '(?<=\\\"Q0\\\":)\\d+'),  # Extract Q0 value
+    NA_character_
+  )) %>%
+  fill(attention_check, .direction = "downup") %>%
+  ungroup() %>%
+  mutate(attention_check = as.numeric(attention_check))  # Convert to numeric
+
+# Step 4: Parse JSON Responses
+# Parse JSON responses, expand them into separate columns, and remove rows
+# containing only attention check responses or empty question values.
 split_data <- cleaned_data %>%
-  # Parse the JSON response column into structured data
-  mutate(response_parsed = map(response, ~ fromJSON(.) %>% as.data.frame())) %>%
-  
-  # Unnest the parsed data into separate columns
-  unnest(cols = response_parsed) %>%
-  
-  # Add a 'target' column to indicate whether the row corresponds to Justin or Nate
-  mutate(
-    target = case_when(
-      row_number() %% 2 == 1 ~ "Justin", # Odd rows are for Justin
-      TRUE ~ "Nate" # Even rows are for Nate
-    )
+  mutate(response_parsed = map(response, ~ {
+    tryCatch(fromJSON(.) %>% as.data.frame(), error = function(e) data.frame())
+  })) %>%
+  unnest(cols = response_parsed, keep_empty = TRUE) %>%
+  filter(
+    !str_detect(response, '^\\{"Q0":\\d+\\}$') &  # Exclude attention-check-only rows
+    !if_all(starts_with("Q"), is.na)  # Exclude rows with all Q columns as NA
   )
-# Reshape the data into long format and create the combined column
+
+# Step 5: Assign Targets (Justin/Nate)
+# Alternate rows between "Justin" and "Nate" for target assignment.
+split_data <- split_data %>%
+  mutate(target = if_else(row_number() %% 2 == 1, "Justin", "Nate"))
+
+# Step 6: Filter for Valid Participants and Reshape Data to Long Format
+# 1. Filter participants who pass attention checks and meet response criteria.
+# 2. Reshape data into long format, keeping all questions for valid participants.
+# 3. Exclude participants who gave the same response to every question.
+
+# Reshape data to long format
 long_data <- split_data %>%
   pivot_longer(
-    cols = starts_with("Q"),        # Dynamically handles columns like Q0, Q1, ..., Q10
-    names_to = "question",          # New column for question names (e.g., Q0, Q1)
-    values_to = "response_value"    # New column for response values
+    cols = starts_with("Q"), 
+    names_to = "question", 
+    values_to = "response_value"
   ) %>%
-  # Combine 'target' and 'question' into a new column named 'question_value'
-  mutate(question_value = paste(target, question, sep = "_")) %>%
-  # Drop extra columns
-  select(-target, -question, -response, -stimulus)
+  mutate(
+    question_value = paste(target, question, sep = "_")
+  )
 
-# Filter so only participants who passed attention check are included (value=0)
-cleaned_long_data <- long_data %>%
-  filter(attention_check == 0)
-
-# Identify participants who pass both attention checks
-valid_participants <- cleaned_long_data %>%
+# Identify valid participants
+valid_participants <- long_data %>%
+  filter(attention_check == 0) %>% # Ensure attention_check is always 0
   filter(
-    (question_value == "Justin_Q0" & response_value == 1) |  # Adjusted logic for Q0 values
-    (question_value == "Nate_Q0" & response_value == 0)
+    (question_value == "Justin_Q0" & response_value == 1) |  # Ensure Justin_Q0 is 1
+    (question_value == "Nate_Q0" & response_value == 0)     # Ensure Nate_Q0 is 0
   ) %>%
-  distinct(subject_id) %>%  # Get unique subject IDs
+  group_by(subject_id) %>%
+  filter(n_distinct(response_value) > 1) %>% # Exclude participants with identical responses
+  ungroup() %>%
+  distinct(subject_id) %>%
   pull(subject_id)
 
-# Filter the data to keep only valid participants and add decision_speed column
-cleaned_long_data <- cleaned_long_data %>%
+# Filter long_data for valid participants and enforce conditions
+long_data <- long_data %>%
   filter(subject_id %in% valid_participants) %>%
-  mutate(
-    decision_speed = ifelse(
-      grepl("Justin", question_value), "quick", 
-      ifelse(grepl("Nate", question_value), "slow", NA)
-    )
+  filter(
+    !(question_value == "Justin_Q0" & response_value != 1) & # Enforce Justin_Q0 = 1
+    !(question_value == "Nate_Q0" & response_value != 0)    # Enforce Nate_Q0 = 0
   )
-# Filter for relevant questions (Q1, Q2, Q3 for Justin and Nate)
-relevant_questions <- c("Justin_Q1", "Justin_Q2", "Justin_Q3", 
-                        "Nate_Q1", "Nate_Q2", "Nate_Q3")
 
-cleaned_long_data <- cleaned_long_data %>%
+
+# Step 7: Create Filtered Dataset with Specified Columns
+# Keep only `subject_id`, `condition`, `response_value`, `question_value`, and `decision_speed`.
+filtered_long_data <- long_data %>%
+  mutate(decision_speed = case_when(
+    str_detect(question_value, "Justin") ~ "quick",
+    str_detect(question_value, "Nate") ~ "slow",
+    TRUE ~ NA_character_
+  )) %>%
+  select(subject_id, condition, response_value, question_value, decision_speed)
+
+
+# Step 8: Filter for Relevant Questions
+# Keep only specific questions of interest and convert response values to numeric.
+relevant_questions <- c("Justin_Q1", "Justin_Q2", "Justin_Q3", "Nate_Q1", "Nate_Q2", "Nate_Q3")
+cleaned_long_data <- filtered_long_data %>%
   filter(question_value %in% relevant_questions) %>%
-  mutate(response_value = as.numeric(response_value)) # Ensure response_value is numeric
+  mutate(response_value = as.numeric(response_value))
 
-# Calculate composite scores for Justin and Nate and save them directly into cleaned_long_data
+# Step 9: Calculate Composite Scores
+# Compute average moral scores for Justin and Nate across their respective questions.
 cleaned_long_data <- cleaned_long_data %>%
   group_by(subject_id) %>%
   mutate(
@@ -283,70 +310,297 @@ cleaned_long_data <- cleaned_long_data %>%
   ) %>%
   ungroup()
 
-# Create final dataset for two-way ANOVA
+# Step 10: Final Dataset
+# Reshape data for analysis and include relevant attributes.
 final_dataset <- cleaned_long_data %>%
   select(subject_id, condition, justin_moral_score, nate_moral_score) %>%
-  distinct() %>% # Keep one row per subject_id
+  distinct() %>%
   pivot_longer(
     cols = c(justin_moral_score, nate_moral_score),
     names_to = "character",
     values_to = "moral_score"
   ) %>%
   mutate(
-    character = ifelse(character == "justin_moral_score", "Justin", "Nate"), # Adjust names for characters
-    decision_speed = ifelse(character == "Justin", "quick", "slow")         # Assign decision speed
+    character = ifelse(character == "justin_moral_score", "Justin", "Nate"),
+    decision_speed = ifelse(character == "Justin", "quick", "slow")
   ) %>%
-  select(subject_id, condition, character, decision_speed, moral_score) # Reorder columns
+  select(subject_id, condition, character, decision_speed, moral_score)
+
+write.csv(final_dataset, "final_individual.csv", row.names = FALSE)
+
+```
+
+```{r echo = TRUE, message = FALSE, warning = FALSE}
+
+# Import and clean the combined groups dataset
+
+# Define the folder path
+folder_path <- "/Users/miladutton/Desktop/CSS/CSS204/critcher2013_2/data/Datasets"
+
+# Read the dataset
+quick_decisions_combined <- read.csv(file.path(folder_path, "quick_decisions_combined.csv"))
+
+# Drop rows with missing values for any column
+cleaned_combined <- quick_decisions_combined %>%
+  drop_na()
+
+# Calculate mean moral scores for Justin (questions 2-4) and Nate (questions 2-4)
+# Note shift in question numbering from my original data - questions now start at 1 rather than 0
+mean_combined <- cleaned_combined %>%
+  mutate(
+    Justin_mean_moral = rowMeans(select(., Justin_Q2:Justin_Q4), na.rm = TRUE),
+    Nate_mean_moral = rowMeans(select(., Nate_Q2:Nate_Q4), na.rm = TRUE)
+  )
+
+# Reshape the data to long format
+final_combined <- mean_combined %>%
+  select(condition, Justin_mean_moral, Nate_mean_moral) %>%
+  pivot_longer(
+    cols = c(Justin_mean_moral, Nate_mean_moral),
+    names_to = "character",
+    values_to = "moral_score"
+  ) %>%
+  mutate(
+    decision_speed = if_else(character == "Justin_mean_moral", "quick", "slow"),
+    character = if_else(character == "Justin_mean_moral", "Justin", "Nate")
+  ) %>%
+  arrange(character, condition)
+
+# Save the final dataset
+write.csv(final_combined, "final_combined.csv", row.names = FALSE)
+
 
 ```
 
 ### Confirmatory analysis
 
-A two-way ANOVA was conducted to examine the main effects of decision type (whether participants decided to return or keep the wallet) and decision speed (quick or slow) on the moral character evaluation. This analysis allowed us to assess how these factors independently influenced moral judgments.
+A two-way ANOVA was conducted to examine the main effects of decision type (whether participants decided to return or keep the wallet) and decision speed (quick or slow) on the moral character evaluation. This analysis allowed me to assess how these factors independently influenced moral judgments, both independently and when interacting.
 
-```{r}
-#Two way ANOVA
-
-# Convert factors if necessary
-final_dataset <- final_dataset %>%
-  mutate(
-    condition = factor(condition, levels = c("moral", "immoral"), labels = c("Returned Wallet", "Kept Wallet")),
-    decision_speed = factor(decision_speed, levels = c("quick", "slow"), labels = c("Quick", "Slow"))
-  )
-
-# Perform two-way ANOVA
+```{r echo = TRUE, message = FALSE, warning = FALSE}
+# ANOVA for just my group data 
+# Perform Two-Way ANOVA
 anova_results <- aov(moral_score ~ condition * decision_speed, data = final_dataset)
 
 # Display the ANOVA table
 summary(anova_results)
 
-# Check interaction plot
-interaction.plot(
-  x.factor = final_dataset$condition,
-  trace.factor = final_dataset$decision_speed,
-  response = final_dataset$moral_score,
-  xlab = "Decision Type (Condition)",
-  ylab = "Moral Character Evaluation",
-  trace.label = "Decision Speed",
-  col = c("blue", "red"),
-  type = "b",
-  pch = c(19, 17),
-  lwd = 2
-)
+#Condition has a strong and significant main effect on moral_score.
+#Decision_Speed alone does not significantly affect moral_score.
+#There is a significant interaction effect between condition and decision_speed, meaning the influence of condition on moral_score changes depending on the level of decision_speed.
+
+
 ```
 
-*Side-by-side graph with original graph is ideal here*
+Above are the ANOVA results for my individual sample, n=96.
+
+```{r echo = TRUE, message = FALSE, warning = FALSE}
+# Bar Plot for my groups data
+
+plot <- ggplot(final_dataset, aes(x = condition, y = moral_score, fill = decision_speed)) +
+  stat_summary(
+    fun = "mean",
+    geom = "bar",
+    position = position_dodge(0.7),
+    color = "black",
+    width = 0.6
+  ) +
+  stat_summary(
+    fun.data = "mean_cl_boot",
+    geom = "linerange",
+    position = position_dodge(0.7),
+    linewidth = 0.8
+  ) +
+  scale_fill_manual(values = c("gray", "blue")) +
+  labs(
+    title = "Moral Character Evaluation - Individual Sample",
+    x = "Condition",
+    y = "Mean Moral Score",
+    fill = "Decision Speed"
+  ) +
+  theme_minimal() +
+  theme(
+    panel.background = element_rect(fill = "white", color = NA), # Ensure white background
+    plot.background = element_rect(fill = "white", color = NA)  # Ensure white plot background
+  )
+
+# Save the plot
+desktop_path <- "~/Desktop/moral_character_evaluation_plot.png"
+ggsave(desktop_path, plot = plot, bg = "white", width = 8, height = 6, dpi = 300)
+
+# Display
+print(plot)
+
+
+
+
+```
+
+Above are the plotted results for my individual sample, n=96.
+
+```{r echo = TRUE, message = FALSE, warning = FALSE}
+# ANOVA for just combined groups data
+# Run the two-way ANOVA
+anova_result_combined <- aov(moral_score ~ condition * decision_speed, data = final_combined)
+
+# Display the summary of the ANOVA
+summary(anova_result_combined)
+
+#Condition has a strong and significant main effect on moral_score.
+#Decision_Speed alone does not significantly affect moral_score.
+#There is a significant interaction effect between condition and decision_speed, meaning the influence of condition on moral_score changes depending on the level of decision_speed.
+
+```
+
+Above are the ANOVA results for the combined sample, n = 207.
+
+```{r echo = TRUE, message = FALSE, warning = FALSE}
+#Bar plot for combined groups data
+library(ggplot2)
+
+# Bar Plot for the groups data
+plot <- ggplot(final_combined, aes(x = condition, y = moral_score, fill = decision_speed)) +
+  stat_summary(
+    fun = "mean",
+    geom = "bar",
+    position = position_dodge(0.7),
+    color = "black",
+    width = 0.6
+  ) +
+  stat_summary(
+    fun.data = "mean_cl_boot",
+    geom = "linerange",
+    position = position_dodge(0.7),
+    linewidth = 0.8
+  ) +
+  scale_fill_manual(values = c("gray", "blue")) +
+  labs(
+    title = "Moral Character Evaluation - Combined Sample",
+    x = "Condition",
+    y = "Mean Moral Score",
+    fill = "Decision Speed"
+  ) +
+  theme_minimal() +
+  theme(
+    panel.background = element_rect(fill = "white", color = NA), 
+    plot.background = element_rect(fill = "white", color = NA) 
+  )
+
+# Save the plot
+desktop_path <- "~/Desktop/combined_plot.png"
+ggsave(desktop_path, plot = plot, bg = "white", width = 8, height = 6, dpi = 300)
+
+# Display the plot
+print(plot)
+
+
+```
+
+Above are the plotted results for the combined sample, n=207.
+
+![Graph from Original Paper](images/original_graph.png){width="500"}
 
 ### Exploratory analyses
 
-Any follow-up analyses desired (not required).
+```{r echo = TRUE, message = FALSE, warning = FALSE}
+#Exploring the effect size for my groups data
+effect_sizes <- eta_squared(anova_results, partial = TRUE)
+print(effect_sizes)
+
+#Condition has the strongest independent effect, explaining 50% of the variance in moral_score.
+#Decision Speed has no meaningful effect on its own.
+#The interaction effect is also strong, explaining 39% of the variance. This supports the idea that the effect of condition changes depending on the level of decision_speed (or vice versa).
+```
+
+Above are the effect size results for my individual sample, n=96.
+
+```{r echo = TRUE, message = FALSE, warning = FALSE}
+#Exploring the effect size for combined data
+effect_sizes_combined <- eta_squared(anova_result_combined, partial = TRUE)
+print(effect_sizes_combined)
+
+#Condition has the strongest independent effect, explaining 43% of the variance in moral_score.
+#Decision Speed has no meaningful effect on its own.
+#The interaction effect is also strong, explaining 32% of the variance. This supports the idea that the effect of condition changes depending on the level of decision_speed (or vice versa).
+```
+
+Above are the effect size results for the combined sample, n=207.
+
+```{r echo = TRUE, message = FALSE, warning = FALSE}
+# Interaction plot
+interaction_plot <- ggplot(final_combined, aes(x = condition, y = moral_score, color = decision_speed, group = decision_speed)) +
+  geom_point(size = 4, shape = 21, fill = "white") + 
+  geom_line(linewidth = 1.2) + 
+  scale_color_manual(values = c("darkgrey", "blue")) +
+  labs(
+    title = "Effect of Condition on Moral Evaluation by Decision Speed",
+    x = "Condition",
+    y = "Moral Score",
+    color = "Decision Speed"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 16), 
+    axis.title.x = element_text(size = 14, face = "italic"), 
+    axis.title.y = element_text(size = 14, face = "italic"),
+    axis.text = element_text(size = 12),
+    legend.position = "top",
+    legend.title = element_text(face = "bold"),
+    panel.grid.major = element_line(color = "gray85", size = 0.5) # Subtle gridlines
+  )
+
+interaction_plot
+
+```
+
+Above is an interaction plot for the combined sample, n=207
+
+```{r echo = TRUE, message = FALSE, warning = FALSE}
+ggplot(final_combined, aes(x = condition, y = moral_score, fill = decision_speed)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c("grey", "blue")) +
+  labs(
+    title = "Moral Scores by Condition and Character",
+    x = "Condition",
+    y = "Moral Score",
+    fill = "Speed"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 16), 
+    axis.title.x = element_text(size = 14, face = "italic"), 
+    axis.title.y = element_text(size = 14, face = "italic"),
+    axis.text = element_text(size = 12),
+    legend.position = "top"
+  )
+
+
+```
+
+Above is a box plot for the combined sample, n=207
 
 ## Discussion
 
 ### Summary of Replication Attempt
 
-Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.
+The primary result of the confirmatory analysis in this replication showed a significant interaction effect between decision type (whether participants decided to return or keep the wallet) and decision speed (quick vs. slow) on moral character evaluation, consistent with the original findings. Specifically, the interaction effect was significant (F(1, 410) = 191.8, p \< 2e-16), confirming that quick moral decisions received more positive evaluations than slow moral decisions, and quick immoral decisions were judged more harshly than slow immoral decisions. This finding is comparable to the original finding of F(1, 117) = 127.07, p \< .001.
+
+Similarly, the original paper also found a significant effect of decision type on moral character evaluation. In the original study, the main effect of decision type was significant (F(1, 117) = 417.07, p \< .001) and explained much of the variance in moral character evaluations, demonstrating that moral decisions were evaluated more positively than immoral ones. In the replication, the effect of decision type was also significant (F(1, 410) = 315.4, p \< 2e-16) and similarly strong, confirming that moral decisions received higher moral character evaluations compared to immoral ones.
+
+This replication successfully captured the ideas of the original finding, which demonstrated that decision speed influenced the perceived moral character of individuals, with quick decisions being interpreted as reflecting greater certainty and thus more polarized moral evaluations. Therefore, the replication can be categorized as a partial replication of the original result, as the primary interaction effect was consistent, but additional analyses, such as emotional impulsivity or mediation through perceived certainty, were not evaluated.
 
 ### Commentary
 
-Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt. None of these need to be long.
+### Insights from Follow-Up Exploratory Analysis
+
+In the exploratory analyses, the replication confirmed the interaction effect between decision type and decision speed, consistent with the original study. However, the non significant effect of decision speed (F(1, 410) = 0.0, p = 0.987) suggests that the speed of the decision alone does not influence moral character evaluation. Decision speed only has a significant effect on moral character evaluation when interacting with decision type. This highlights that the moral nature of the decision is a stronger determinant of judgments than the speed at which the decision is made.
+
+### Assessment of the Meaning of the Replication
+
+This replication is successful in reproducing the key findings of the original study, particularly the significant interaction between decision type and speed. However, slight differences in effect sizes could be attributed to the larger sample size in this study (n = 207 compared to n = 118 in the original). While the replication used the same moral character evaluation measures, minor procedural differences, such as the participant pool, experimental environment, or even cultural contexts, could explain any small differences. Importantly, the replicated findings strengthen the argument that quick decisions are perceived as more certain and thus more polarizing in moral contexts.
+
+**Objections or Challenges Raised:**\
+One potential challenge in the replication is the decision to handle missing data through list wise deletion, which could reduce variability in the data set. Additionally, while the replication focused solely on decision type and speed, the original study may have included mediating variables (e.g., perceived certainty or emotional impulsivity) that were not tested here. No direct objections from the original authors have been raised.
+
+## CREDIT and acknowledgements
+
+**Mila Dutton**: Software (lead); formal analysis (lead); writing - original draft (equal); writing – review and editing (equal). **Caroline Porche**: Methodology (lead); software (support); writing - original draft (equal); writing – review and editing (equal). **Anthony Zavala**: Methodology (support); Writing - original draft (equal); writing – review and editing (equal).
