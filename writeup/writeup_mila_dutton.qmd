@@ -20,7 +20,9 @@ A potential challenge is that I do not have experience with this type of data an
 
 [Original Paper](https://drive.google.com/file/d/182sSzaaCkCtBFzJWphGbDNWhHVsF7vaM/view)
 
-[Experiment](https://ucsd-psych201a.github.io/critcher2013_2/quick_decisions.html)
+[Paradigm](https://ucsd-psych201a.github.io/critcher2013_2/quick_decisions.html)
+
+[Pre Registration](https://osf.io/pjefu)
 
 ## Methods
 
@@ -133,8 +135,6 @@ The participant pool was also different. The original paper included mainly unde
 Lastly, I added an attention check at the end of the questions which the original study did not have. This was to ensure that participants were not just clicking through, and to help minimize bots. These differences were not expected to make a difference in obtaining the effect.
 
 ### Methods Addendum (Post Data Collection)
-
-After collecting and cleaning my data, I decided to perform effect size analysis. This was not in my original plan and the original paper did not clearly mention this process. However, I performed this analysis to provide more insight into the relationship between decision type, decision speed, and moral character evaluation.
 
 After collecting and cleaning my data, I decided to handle missing values through list wise deletion. This approach, which removes participants with missing data for any variable included in the analysis, was not part of my original plan but was implemented to maintain a consistent data set for all statistical tests. While this method reduced the sample size slightly, it ensured that all analyses were conducted on complete cases, preserving the validity of the results.
 
