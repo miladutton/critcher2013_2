@@ -404,6 +404,12 @@ summary(anova_results)
 
 ```
 
+### Comparing Results
+
+This graph below shows a graph from the results of the original study and our results after conducting the replication.
+
+![](images/comparison.png)
+
 ### Summary of Replication Attempt
 
 The replication successfully confirmed the significant impact of moral condition on moral character evaluations. Similar to the original study, a significant interaction between condition and decision speed was observed, but decision speed alone showed no meaningful effect on moral scores. This result indicates the primary findings of the original study were replicated.
@@ -414,7 +420,7 @@ The replication successfully confirmed the significant impact of moral condition
 -   **Replication Meaning**: Differences in emphasis on decision speed effects suggest potential moderators, such as scenario wording or participant diversity, that could influence replication outcomes.
 -   **Challenges**: Key challenges included a lack of power analysis and slight ambiguities in operationalizing constructs such as certainty and decision speed.
 
-## Post-Data-Collection Methods 
+## Post-Data-Collection Methods
 
 ### Participants
 
