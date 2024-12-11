@@ -1,65 +1,79 @@
-https://ucsd-psych201a.github.io/critcher2013_2/quick_decisions.html
-Project Check 1 link above. The responses help us understand how people perceive decision making in different moral scenarios. We have the scale from 1 to 7 and other scales form slowly or quickly for the people to look through after reading the prompt. [Repository] (https://github.com/carolineporche1/critcher2012)
+title: "title:Replication of Study 'How Quick Decisions Illuminate Moral Character' by Critcher et al. (2013, Social Psychological and Personality Science)"
 
-[Original Paper] (https://github.com/carolineporche1/critcher2012/blob/main/original_paper/How_quick_decisions_illuminate_moral_cha.pdf)
 
-[Paradigm] (https://ucsd-psych201a.github.io/critcher2013_2/quick_decisions.html)>
+\
+<https://ucsd-psych201a.github.io/critcher2013_2/quick_decisions.html>\
+Project Check 1 link above. The responses help us understand how people perceive decision making in different moral scenarios. We have the scale from 1 to 7 and other scales form slowly or quickly for the people to look through after reading the prompt. \[Repository\] ([https://github.com/carolineporche1/critcher2012](https://github.com/ucsd-psych201a/critcher2013_2))
 
-Critcher2013
+\[Original Paper\] (https://github.com/carolineporche1/critcher2012/blob/main/original_paper/How_quick_decisions_illuminate_moral_cha.pdf)
+
+\[Paradigm\] (<https://ucsd-psych201a.github.io/critcher2013_2/quick_decisions.html>)\>
+
+[Pre Registration](https://osf.io/pjefu)
+
+**Critcher2013**
 
 Introduction
 
 I chose to replicate this project because of how it relates to my research interest in misinformation in how people develop their beliefs in ideas from social media such as
 
-the far right. This theory is based on the idea of how people make quick judgments based on others’ quick decisions. The idea of people reacting to misinformation quickly based on assumptions is similar to this research done in this article. I am excited to hear more about how important reaction ime is going to affect people’s judgments on others.
+the far right. This theory is based on the idea of how people make quick judgments based on others' quick decisions. The idea of people reacting to misinformation quickly based on assumptions is similar to this research done in this article. I am excited to hear more about how important reaction ime is going to affect people's judgments on others.
 
-I would like to conduct this by doing one question similar to the one about Pamela who gives her children a man for adoption. They have this situation and have participants react to it and start to compare in which the two people makes the decision quickly or longer and based on her response. This project is about people making quick judgments based on others’ quick decisions such as in the action of selling one’s child and many other examples. This could be in a matter of seconds in a certain group of experiments to test the reactant time and difference whether it be positive or negative based on an individual’s action.
+I would like to conduct this by doing one question similar to the one about Pamela who gives her children a man for adoption. They have this situation and have participants react to it and start to compare in which the two people makes the decision quickly or longer and based on her response. This project is about people making quick judgments based on others' quick decisions such as in the action of selling one’s child and many other examples. This could be in a matter of seconds in a certain group of experiments to test the reactant time and difference whether it be positive or negative based on an individual's action.
 
 Methods
 
+\
 
+-   Power Analysis
 
-Power Analysis
+    -   The original paper did not provide us with enough information for this sample. We have looked through the paper to find them saying they did a medium sample size but did not provide an amount of people. This therefore made us choose a sample size of 298 as a default.
 
-The original paper did not provide us with enough information for this sample. We have looked through the paper to find them saying they did a medium sample size but did not provide an amount of people. This therefore made us choose a sample size of 298 as a default.
-Planned Sample
+-   Planned Sample
 
-Our sample size would be 298 people we surveyed.
+    Our sample size would be 298 people we surveyed.
 
-Materials
+-   Materials
 
 “Quickness. As a manipulation check, participants indicated how quickly (vs. slowly) the decision was made”.
 
-Moral character evaluation. The three moral evaluation items had participants assess the agents’ underlying moral principles and standards  by asking whether the agent: ‘‘has entirely good (vs. entirely bad) moral principles,’’ ‘‘has good (vs. bad) moral standards,’’ and ‘‘deep down has the moral principles and knowledge to do the right thing.’’
+Moral character evaluation. The three moral evaluation items had participants assess the agents’ underlying moral principles and standards  by asking whether the agent: ‘‘has entirely good (vs. entirely bad) moral principles,’’ ‘‘has good (vs. bad) moral standards,’’ and ‘‘deep down has the moral principles and knowledge to do the right thing.’’
 
-Certainty. We included 4 items to assess each actor’s perceived decision certainty. Participants indicated ‘‘how conflicted [each] felt when making his decision’’ (reverse-scored), ‘‘how many reservations [each] had’’ (reverse-scored), whether the target ‘‘was quite certain in his decision’’ (vs. had considerable reservations), and ‘‘how far [each] was from choosing the alternate course of action.’’ The items had high internal reliability for both Justin (a 1⁄4 .89) and Nate (a 1⁄4 .81).
+Certainty. We included 4 items to assess each actor’s perceived decision certainty. Participants indicated ‘‘how conflicted \[each\] felt when making his decision’’ (reverse-scored), ‘‘how many reservations \[each\] had’’ (reverse-scored), whether the target ‘‘was quite certain in his decision’’ (vs. had considerable reservations), and ‘‘how far \[each\] was from choosing the alternate course of action.’’ The items had high internal reliability for both Justin (a 1⁄4 .89) and Nate (a 1⁄4 .81).
 
-Emotional impulsivity. In order to ensure that decision speed was not simply taken as a proxy for emotional impulsivity (a feature previously shown to affect moral judgments; Pizarro, Uhlmann, & Salovey, 2003), we assessed perceptions of the emotionally impulsive nature of the decision with 2 items. Participants indicated to what extent the person remained‘‘calm and emotionally contained’’ (reverse-scored) and ‘‘became upset and acted without thinking.’’ The items were significantly correlated (Justin: r 1⁄4 .51, p < .001; Nate:r 1⁄4 .33, p < .001).”(Perceived Motives: “…participants rated Pamela’s motives to: “get more money” and”protect her children”.”
+Emotional impulsivity. In order to ensure that decision speed was not simply taken as a proxy for emotional impulsivity (a feature previously shown to affect moral judgments; Pizarro, Uhlmann, & Salovey, 2003), we assessed perceptions of the emotionally impulsive nature of the decision with 2 items. Participants indicated to what extent the person remained‘‘calm and emotionally contained’’ (reverse-scored) and ‘‘became upset and acted without thinking.’’ The items were significantly correlated (Justin: r 1⁄4 .51, p \< .001; Nate:r 1⁄4 .33, p \< .001).”(Perceived Motives: "...participants rated Pamela’s motives to: “get more money” and"protect her children"."
 
-“Participants read about Pamela, who struggled to earn enough to provide for her two children. Pamela worked for Mr. Muir, a wealthy bachelor who took a special interest in Pamela’s son Alan, taking him on outings and buying him expensive presents. Although Pamela had no direct evidence that Mr. Muir’s intentions were unsavory, his obsession with Alan made Pamela feel suspicious of Muir’s true intentions. One day, Mr. Muir approached Pamela with a proposition. He told Pamela that he cared for Alan very much and would like to adopt him. If Pamela agreed, Muir would triple her sal- ary. We assumed that people would find it morally abhorrent to, in effect, sell one’s son to a man who might abuse him. Pamela was described as taking 3 seconds (quick) or 3 days (slow) to make her decision. We independently varied whether Pamela accepted or rejected Mr. Muir’s offer to sell her son. Participants answered the same quickness, moral character eva- luation (a 1⁄4 .83), certainty (a 1⁄4 .86), and emotional impulsivity (r 1⁄4 .43) items as in Experiment 2. We added 2 items that assessed Pamela’s perceived motives. On scales from 1 (not at all) to 7 (very strong), participants rated Pamela’s motives to: ‘‘get more money’’ and ‘‘protect her children’’ (r 1⁄4 .64, p < .001).”
+-   “Participants read about Pamela, who struggled to earn enough to provide for her two children. Pamela worked for Mr. Muir, a wealthy bachelor who took a special interest in Pamela’s son Alan, taking him on outings and buying him expensive presents. Although Pamela had no direct evidence that Mr. Muir’s intentions were unsavory, his obsession with Alan made Pamela feel suspicious of Muir’s true intentions. One day, Mr. Muir approached Pamela with a proposition. He told Pamela that he cared for Alan very much and would like to adopt him. If Pamela agreed, Muir would triple her sal- ary. We assumed that people would find it morally abhorrent to, in effect, sell one’s son to a man who might abuse him. Pamela was described as taking 3 seconds (quick) or 3 days (slow) to make her decision. We independently varied whether Pamela accepted or rejected Mr. Muir’s offer to sell her son. Participants answered the same quickness, moral character eva- luation (a 1⁄4 .83), certainty (a 1⁄4 .86), and emotional impulsivity (r 1⁄4 .43) items as in Experiment 2. We added 2 items that assessed Pamela’s perceived motives. On scales from 1 (not at all) to 7 (very strong), participants rated Pamela’s motives to: ‘‘get more money’’ and ‘‘protect her children’’ (r 1⁄4 .64, p \< .001).”
 
-Procedure
+    -   
 
-In Experiment 1, participants looked at two characters (Justin and Nate) who either quickly or slowly had a decision to either keep or return a found wallet. The study found that quick moral actions led to positive moral character evaluations, while quick immoral actions led to negative evaluations. The speed of the decision signaled the actor’s certainty, and certainty then changed the judgments of their character. 
+-   Procedure
 
-Analysis Plan
-We got rid of participants who they can’t find data on in the missing data section. We used a two-way ANOVA in order to find the main effect of decision type and how fast the decision is  based on the how good the person is We used a two-way ANOVA in order to analyze the interaction effects from how fast the decision is done and the type of decision We used T-tests in order to have a comparison of how decision speed on both types of decision impacted moral character evaluation.T-tests for perceived certainty of decisions and its relationship to decision speed and perceived impulsivity.  We used a 2 (decision) x 2 (speed) ANOVA was performed to analyze the perceived motives of Pamela.
+In Experiment 1, participants looked at two characters (Justin and Nate) who either quickly or slowly had a decision to either keep or return a found wallet. The study found that quick moral actions led to positive moral character evaluations, while quick immoral actions led to negative evaluations. The speed of the decision signaled the actor’s certainty, and certainty then changed the judgments of their character. 
+
+-   Analysis Plan
+
+We got rid of participants who they can’t find data on in the missing data section. We used a two-way ANOVA in order to find the main effect of decision type and how fast the decision is  based on the how good the person is We used a two-way ANOVA in order to analyze the interaction effects from how fast the decision is done and the type of decision We used T-tests in order to have a comparison of how decision speed on both types of decision impacted moral character evaluation.T-tests for perceived certainty of decisions and its relationship to decision speed and perceived impulsivity.  We used a 2 (decision) x 2 (speed) ANOVA was performed to analyze the perceived motives of Pamela.
+
+-   
 
 #Design overview
 
-The factors that were manipulated was decision type and decision speed. There was measures of perceived motives being 4 of them which were quickness, moral character evaluation, emotional impulsivity, and certainty. The between because they changed the expirment each particitciant only ahd one group and one condition. The measures were not repeated. The order effect could have been one of the consequences. Their was not mention of tackling the reduction of demand characteristics. They couldn’t take into account people with similar situations in their lives to account for these potential cofounds.
+The factors that were manipulated was decision type and decision speed. There was measures of perceived motives being 4 of them which were quickness, moral character evaluation, emotional impulsivity, and certainty. The between because they changed the expirment each particitciant only ahd one group and one condition. The measures were not repeated. The order effect could have been one of the consequences. Their was not mention of tackling the reduction of demand characteristics. They couldn't take into account people with similar situations in their lives to account for these potential cofounds.
 
-Differences from original study
-We are only doing experiment 1 which we will replicate in order to analyze the situation . The people who are participating in the study are not students from a university but rather from a website. This study will be conducted through the internet causing an impact in the way the people can give a response. The environment in which it is conducted will be different as well since we are having two different ways in which people answer the questions.
+-   **Differences from original study**
 
-Results
+We are only doing experiment 1 which we will replicate in order to analyze the situation . The people who are participating in the study are not students from a university but rather from a website. This study will be conducted through the internet causing an impact in the way the people can give a response. The environment in which it is conducted will be different as well since we are having two different ways in which people answer the questions.\
 
-Data Preparation
-In order to begin to get have thorw away of missing values we need to get rid of  data with failed attention checks. This has importance because of the way the values impact the study.We need to lLook towards assessing outliers to see how much of an impact they will have and prevent any issues.. We need to make sure we have the correct data formatting in order to not get the data lost.
+**Results**
+
+-   **Data Preparation**
+
+In order to begin to get have thorw away of missing values we need to get rid of  data with failed attention checks. This has importance because of the way the values impact the study.We need to lLook towards assessing outliers to see how much of an impact they will have and prevent any issues.. We need to make sure we have the correct data formatting in order to not get the data lost.
 
 To prepare the dataset for analysis, we start with cleaning the data. The entry that has a missing values were rid of to keep data integrity. Additionally, any towrads responses which weere not able to pass attention checks were not included to make sure it had high data quality. Outliers were found and looked through; if they proved to be problematic they were also gottenr id of. Lastly we made sure the dataset had the correct format.
 
-```{r echo = TRUE, message = FALSE, warning = FALSE}
+\`\`\`{r echo = TRUE, message = FALSE, warning = FALSE}\
 
 Data Preparation
 
@@ -71,49 +85,66 @@ Import data
 
 Set the path to the folder
 
-folder_path <- “/Users/anthonyzavala/Desktop/CSS/CSS204/critcher2013_2/data/osfstorage-archive”
+folder_path \<- "/Users/anthonyzavala/Desktop/CSS/CSS204/critcher2013_2/data/osfstorage-archive"
 
 List all CSV files in the folder
 
-csv_files <- list.files(path = folder_path, pattern = “*.csv”, full.names = TRUE, recursive = TRUE)
+csv_files \<- list.files(path = folder_path, pattern = "\*.csv", full.names = TRUE, recursive = TRUE)
 
 Update combined_data by reading and combining all CSV files with subject_id column at the front
 
-combined_data <- csv_files %>% map_dfr(~ { # Read each file data <- read_csv(.x)
+combined_data \<- csv_files %\>% map_dfr(\~ { \# Read each file data \<- read_csv(.x)
 
+```         
 Extract the subject ID from the file name (remove directory path and ".csv" extension)
 subject_id <- tools::file_path_sans_ext(basename(.x))
 
 # Add subject_id as the first column
 data %>% mutate(subject_id = subject_id, .before = 1)
+```
+
 })
 
 Data exclusion / filtering
 
-Select relevant columns (adjusted based on column names)
+#### 
 
-processed_data <- combined_data %>% # Retain subject_id and condition columns select(subject_id, condition, starts_with(“Justin”), starts_with(“Nate”), group) %>%
 
-# Propagate ‘condition’ values downward to fill in gaps fill(condition, .direction = “down”) %>%
+# Select relevant columns (adjusted based on column names)
+processed_data <- combined_data %>%
+  # Retain subject_id and condition columns
+  select(subject_id, condition, starts_with("Justin"), starts_with("Nate"), group) %>%
+  
+  # Propagate 'condition' values downward to fill in gaps
+  fill(condition, .direction = "down") %>%
+  
+  # Organize data by 'subject_id'
+  group_by(subject_id) %>%
+  
+  # Add an attention check column based on group or response patterns
+  mutate(attention_check = if_else(
+    group == "control",
+    0,  # Example check for control group (adjust logic as needed)
+    NA_real_
+  )) %>%
+  
+  ungroup() %>%
+  
+  # Ensure attention check is numeric
+  mutate(attention_check = as.numeric(attention_check)) %>%
+  
+  # Fill attention check values up and down
+  fill(attention_check, .direction = "downup")
 
-# Organize data by ‘subject_id’ group_by(subject_id) %>%
-
-# Add an attention check column based on group or response patterns mutate(attention_check = if_else( group == “control”, 0, # Example check for control group (adjust logic as needed) NA_real_ )) %>%
-
-ungroup() %>%
-
-# Ensure attention check is numeric mutate(attention_check = as.numeric(attention_check)) %>%
-
-# Fill attention check values up and down fill(attention_check, .direction = “downup”)
-
-Print a preview of the cleaned data
-
+# Print a preview of the cleaned data
 head(processed_data)
 
-```{r} # Transform data to a long format and retain ‘condition’ reshaped_data <- processed_data %>% pivot_longer(
 
-cols = starts_with(“Justin”):starts_with(“Nate”), names_to = “question”, values_to = “response_value” ) %>% mutate(question_value = paste(condition, question, sep = “_”)) %>% select(subject_id, condition, question_value, response_value, group, attention_check)
+\`\`\`{r} \# Transform data to a long format and retain 'condition' reshaped_data \<- processed_data %\>% pivot_longer(
 
+cols = starts_with("Justin"):starts_with("Nate"), names_to = "question", values_to = "response_value" ) %\>% mutate(question_value = paste(condition, question, sep = "\_")) %\>% select(subject_id, condition, question_value, response_value, group, attention_check)
+
+```
 
 
 # Check unique values in 'condition'
@@ -130,14 +161,18 @@ valid_responses <- combined_data %>%
 nrow(valid_responses)
 
 } reshaped_data \<- combined_data %\>% pivot_longer( cols = starts_with("Justin"):starts_with("Nate"), names_to = "question", values_to = "response_value" ) %\>% select(subject_id, condition, group, question, response_value)
+
+```         
+
 `
 
 head(filtered_long_data) nrow(filtered_long_data)
 
-Ensure necessary columns exist
+# Ensure necessary columns exist
 
 names(filtered_long_data)
 
+```         
 
 
 
@@ -162,23 +197,421 @@ ggplot(filtered_long_data, aes(x = condition, y = response_value, fill = group))
     text = element_text(size = 14),
     legend.title = element_blank()
   )
+```
+
 #Analysis code
 
-<!DOCTYPE html>
+\<!DOCTYPE html\>
 
-Results Confirmatory analysis 
+<html lang="en">
 
-The statistical test we decided on was replicating experiment 1 which utilizes a two way ANOVA based on what the perceived morals of someone character composite confirmed through the influence of how fast the decision was T-tests . We did this in order to find a comparison of how fast the decision is on both types of decision impacting what the moral character is like T-tests.
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Moral Decision Experiment</title>
+
+<script src="https://unpkg.com/jspsych@8.0.2"></script>
+<script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@2.0.0"></script>
+<script src="https://unpkg.com/@jspsych/plugin-survey-likert@2.0.0"></script>
+<script src="https://unpkg.com/@jspsych-contrib/plugin-pipe"></script>
+
+<link href="https://unpkg.com/jspsych@8.0.2/css/jspsych.css" rel="stylesheet" type="text/css" /> <link rel="stylesheet" type="text/css" href="styles.css"> <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<script>
+        const jsPsych = initJsPsych();
+
+ // Generate a unique subject_id using randomization
+        const subject_id = jsPsych.randomization.randomID(10);
+        const condition = Math.random() < 0.5 ? 'moral' : 'immoral';
+
+const informedConsent = {
+            type: jsPsychHtmlKeyboardResponse,
+            stimulus: `<h1 class="story-text">Informed Consent</h1>
+<p class="story-text">You are being invited to participate in a research study titled “Reproducibility of Psychological Science and Instruction.” This study is being done by Dr. Bria Long from UC San Diego and associated graduate students in the Experimental Methods course. You were selected to participate in this study because you are an adult in the U.S. and have been a represented population in previous psychology studies.</p>
+               
+<p class="story-text">The purpose of this study is to better understand how well previously published studies in the psychological field replicate online and with different populations. Your participation in this research should last approximately 5-30 minutes. If you agree to take part in this study, you may be asked to view a set of stimuli, including pictures, sounds, written text, or videos and then give some responses via key-presses, verbally, or with paper-and-pencil. We may also observe your choices or preferences among an array of stimuli. These stimuli will be taken directly from or closely adapted from studies that already exist in the published psychological literature. Stimuli will include, e.g., pictures of objects and human faces, audio and video clips, short text passages, etc. None of the stimuli will be disturbing, threatening, or offensive. The online and in-person experiments described in this protocol will take no more than 30 minutes. An example game you might play would be to click on an image on the screen that matches a word you hear being said out loud. Your total expected time commitment for this study is between 5-30 minutes, and is specified in the study description.</p>
+               
+>p class="story-text">Your participation in this study is completely voluntary and you can withdraw at any time. Choosing not to participate or withdrawing will result in no penalty or loss of benefits to which you are entitled. You are free to skip any question that you choose.</p>
+               
+<p class="story-text">We will not be asking for any personally identifying information, and we will handle responses as confidentially as possible. Your SONA or Prolific IDs will never be tied to your responses on this survey. However, we cannot guarantee the confidentiality of information transmitted over the Internet. To minimize this risk, data containing anything that might be personally identifiable (e.g. Prolific IDs or IP addresses) will be encrypted on transfer and storage and will only be accessible to qualified lab personnel. We will be keeping data collected as part of this experiment indefinitely. This anonymized data (containing neither Prolific IDs nor IP addresses) may be shared with the scientific community or with other participants to be used as stimuli in future studies.</p>
+               
+<p class="story-text">If you have questions about this project or if you have a research-related problem, you may contact the researcher(s), Dr. Bria Long, <a href="mailto:brlong@ucsd.edu">brlong@ucsd.edu</a>. If you have any questions concerning your rights as a research subject, you may contact the UC San Diego Office of IRB Administration at <a href="mailto:irb@ucsd.edu">irb@ucsd.edu</a> or 858-246-4777.</p>
+               
+<p class="story-text">By participating in this research you are indicating that you are at least 18 years old, have read this consent form, and agree to participate in this research study. Please keep this consent form for your records.</p>
+                        
+<p class="story-text">When you are ready to begin, press any key to continue.</p>`
+        };
+
+
+
+const welcomeMessage = {
+type: jsPsychHtmlKeyboardResponse,
+stimulus: `<h1 class="story-text">Welcome to the Moral Decision-Making Study</h1>
+                       <p class="story-text">Thank you for taking the time to participate in this study. Today, you will read a short story and answer questions about two characters, Justin and Nate. Your responses will help us understand how people perceive decision-making in different moral scenarios.</p>
+                       <p class="story-text"><strong>What to expect:</strong></p>
+                       <p class="story-text">First, you will be presented with a brief story describing the actions of the two characters.</p>
+                       <p class="story-text">After reading the story, you will be asked a series of questions regarding each character’s decisions and your impressions of their behavior. The story will remain visible on the screen as you answer the questions to help you recall details.</p>
+                       <p class="story-text">Each question will use a scale from 1 to 7. Please answer each question based on your personal perception of each character.</p>
+                       <p class="story-text">Your responses are anonymous and will only be used for research purposes. Please try to respond as accurately and honestly as possible.</p>
+                       <p class="story-text">When you are ready to begin, press any key to continue.</p>`
+        };
+
+        const moralStory = `<p class="story-text">Justin and Nate were walking to separate cars in the parking lot of Andronico’s, a local grocery store, when they each spotted a different lost wallet next to their cars. Upon picking up the wallet and looking inside, each found several hundred dollars in cash. Each man considered whether he should return the wallet and money to the Customer Service desk at Andronico’s, or pocket the money and drive away.</p>
+                            <p class="story-text">Justin saw his decision as an easy one and was able to decide quickly. He did not steal the money and instead left the wallet with Customer Service.</p>
+                            <p class="story-text">Nate saw his decision as difficult and was only able to decide after long and careful deliberation. After several minutes of thinking in his car, he too decided not to steal the money and instead left the wallet with Customer Service.</p>`;
+
+        const immoralStory = `<p class="story-text">Justin and Nate were walking to separate cars in the parking lot of Andronico’s, a local grocery store, when they each spotted a different lost wallet next to their cars. Upon picking up the wallet and looking inside, each found several hundred dollars in cash. Each man considered whether he should return the wallet and money to the Customer Service desk at Andronico’s, or pocket the money and drive away.</p>
+                              <p class="story-text">Justin saw his decision as an easy one and was able to decide quickly. He pocketed the money and drove off.</p>
+                              <p class="story-text">Nate saw his decision as difficult and was only able to decide after long and careful deliberation. After several minutes of thinking in his car, he too decided to pocket the money and drive off.</p>`;
+
+        const story = condition === 'moral' ? moralStory : immoralStory;
+
+        const storyPresentation = {
+            type: jsPsychHtmlKeyboardResponse,
+            stimulus: story + "<p class='story-text'>Press any key to continue to the questions.</p>",
+            choices: "ALL_KEYS"
+        };
+
+        // Attention check question
+        const attentionCheck = {
+            type: jsPsychSurveyLikert,
+            preamble: `<p class="story-text">Please answer the following question to confirm your attention during the story.</p>`,
+            questions: [
+                {
+                    prompt: "Who made their decision quickly?",
+                    labels: ["Justin", "Nate", "Both", "Neither"],
+                    required: true
+                }
+            ]
+        };
+
+        function createCharacterQuestions(character) {
+    return {
+        type: jsPsychSurveyLikert,
+        preamble: `<div class="story-text">${story}</div><h3 class="question-text">Questions about ${character}</h3>`,
+        questions: [
+            // Quickness - manipulation check
+            { 
+                prompt: `Did ${character} make his decision quickly or slowly?`, 
+                labels: ["Slow", "Quick"], 
+                required: true 
+            },
+            // Moral Character Evaluation
+            { 
+                prompt: `Regardless of ${character}'s decision, does it sound like ${character} has underlying moral principles that are good, bad, or somewhere in between?`, 
+                labels: ["1 (completely bad)", "2", "3", "4 (mixed)", "5", "6", "7 (completely good)"], 
+                required: true 
+            },
+            { 
+                prompt: `Regardless of ${character}'s decision, do you think ${character} has moral standards that are good, bad, or somewhere in between?`, 
+                labels: ["1 (completely bad)", "2", "3", "4 (mixed)", "5", "6", "7 (completely good)"], 
+                required: true 
+            },
+            { 
+                prompt: `Regardless of ${character}'s decision, do you think ${character} possesses the moral knowledge and principles necessary to do ‘the right thing’?`, 
+                labels: ["1 (not at all)", "2", "3", "4 (somewhat)", "5", "6", "7 (completely)"], 
+                required: true 
+            },
+            // Certainty
+            { 
+                prompt: `Would you say ${character} was quite certain in his decision, or did ${character} have hesitations about his or her decision?`, 
+                labels: ["1 (completely certain)", "2", "3", "4", "5", "6", "7 (considerable hesitations)"], 
+                required: true 
+            },
+            { 
+                prompt: `How close do you think ${character} was to choosing the alternate course of action?`, 
+                labels: ["1 (very close)", "2", "3", "4", "5", "6", "7 (not close at all)"], 
+                required: true 
+            },
+            { 
+                prompt: `How conflicted do you think ${character} felt in making the decision?`, 
+                labels: ["1 (very conflicted)", "2", "3", "4", "5", "6", "7 (not at all conflicted)"], 
+                required: true 
+            },
+            { 
+                prompt: `Based on the information provided, do you think ${character} had many reservations about the decision?`, 
+                labels: ["1 (none at all)", "2", "3", "4", "5", "6", "7 (a whole lot)"], 
+                required: true 
+            },
+            // Emotional Impulsivity
+            { 
+                prompt: `Do you think ${character} was calm and emotionally contained while making the decision?`, 
+                labels: ["1 (not at all)", "2", "3", "4", "5", "6", "7 (entirely so)"], 
+                required: true 
+            },
+            { 
+                prompt: `To what extent do you think ${character} became upset and acted without thinking?`, 
+                labels: ["1 (not at all)", "2", "3", "4", "5", "6", "7 (entirely so)"], 
+                required: true 
+            }
+        ]
+    };
+}
+
+        // Use subject_id to create a unique filename
+        const filename = `${subject_id}.csv`;
+
+        const save_data = {
+            type: jsPsychPipe,
+            action: "save",
+            experiment_id: "omsyQuAKgQDW",  // Replace with your actual experiment ID
+            filename: filename,  // Saving all data into this file
+            data_string: () => jsPsych.data.get().csv()  // Get data in CSV format
+        };
+
+        const thankYouMessage = {
+            type: jsPsychHtmlKeyboardResponse,
+            stimulus: `
+<h1 class="story-text">Thank you for participating!</h1><p class="story-text">We greatly appreciate your time and input. Your responses will help us understand decision-making in moral scenarios.</p>
+<p class="story-text">Click the button below to confirm your participation on Prolific.</p>
+<button id="redirect-button" style="font-size: 16px; padding: 10px 20px; cursor: pointer;">
+Confirm Participation </button>
+            `,
+choices: "NO_KEYS", // Prevent participants from skipping this screen with keys
+            on_load: () => {
+                document.getElementById('redirect-button').addEventListener('click', function() {
+                    window.location.href = "https://app.prolific.com/submissions/complete?cc=C1DVOHLJ";
+                });
+            }
+        };
+
+
+        const timeline = [
+            informedConsent,
+            welcomeMessage,
+            storyPresentation,
+            createCharacterQuestions("Justin"),
+            createCharacterQuestions("Nate"),
+            attentionCheck,
+            save_data,
+            thankYouMessage
+        ];
+
+        jsPsych.run(timeline);
+    </script>
+
+</body>
+
+</html>
+
+**Results Confirmatory analysis** 
+
+r echo = TRUE, message = FALSE, warning = FALSE}
+# ANOVA for just my group data 
+# Perform Two-Way ANOVA
+anova_results <- aov(moral_score ~ condition * decision_speed, data = final_dataset)
+
+# Display the ANOVA table
+summary(anova_results)
+
+#Condition has a strong and significant main effect on moral_score.
+#Decision_Speed alone does not significantly affect moral_score.
+#There is a significant interaction effect between condition and decision_speed, meaning the influence of condition on moral_score changes depending on the level of decision_speed.
+
+
+```
+
+Above are the ANOVA results for my individual sample, n=96.
+
+ echo = TRUE, message = FALSE, warning = FALSE}
+# Bar Plot for my groups data
+
+plot <- ggplot(final_dataset, aes(x = condition, y = moral_score, fill = decision_speed)) +
+  stat_summary(
+    fun = "mean",
+    geom = "bar",
+    position = position_dodge(0.7),
+    color = "black",
+    width = 0.6
+  ) +
+  stat_summary(
+    fun.data = "mean_cl_boot",
+    geom = "linerange",
+    position = position_dodge(0.7),
+    linewidth = 0.8
+  ) +
+  scale_fill_manual(values = c("gray", "blue")) +
+  labs(
+    title = "Moral Character Evaluation - Individual Sample",
+    x = "Condition",
+    y = "Mean Moral Score",
+    fill = "Decision Speed"
+  ) +
+  theme_minimal() +
+  theme(
+    panel.background = element_rect(fill = "white", color = NA), # Ensure white background
+    plot.background = element_rect(fill = "white", color = NA)  # Ensure white plot background
+  )
+
+# Save the plot
+desktop_path <- "~/Desktop/moral_character_evaluation_plot.png"
+ggsave(desktop_path, plot = plot, bg = "white", width = 8, height = 6, dpi = 300)
+
+# Display
+print(plot)
+
+Above are the plotted results for my individual sample, n=96.
+
+echo = TRUE, message = FALSE, warning = FALSE}
+# ANOVA for just combined groups data
+# Run the two-way ANOVA
+anova_result_combined <- aov(moral_score ~ condition * decision_speed, data = final_combined)
+
+# Display the summary of the ANOVA
+summary(anova_result_combined)
+
+#Condition has a strong and significant main effect on moral_score.
+#Decision_Speed alone does not significantly affect moral_score.
+#There is a significant interaction effect between condition and decision_speed, meaning the influence of condition on moral_score changes depending on the level of decision_speed.
+
+
+Above are the ANOVA results for the combined sample, n = 207.
+
+{r echo = TRUE, message = FALSE, warning = FALSE}
+#Bar plot for combined groups data
+library(ggplot2)
+
+# Bar Plot for the groups data
+plot <- ggplot(final_combined, aes(x = condition, y = moral_score, fill = decision_speed)) +
+  stat_summary(
+    fun = "mean",
+    geom = "bar",
+    position = position_dodge(0.7),
+    color = "black",
+    width = 0.6
+  ) +
+  stat_summary(
+    fun.data = "mean_cl_boot",
+    geom = "linerange",
+    position = position_dodge(0.7),
+    linewidth = 0.8
+  ) +
+  scale_fill_manual(values = c("gray", "blue")) +
+  labs(
+    title = "Moral Character Evaluation - Combined Sample",
+    x = "Condition",
+    y = "Mean Moral Score",
+    fill = "Decision Speed"
+  ) +
+  theme_minimal() +
+  theme(
+    panel.background = element_rect(fill = "white", color = NA), 
+    plot.background = element_rect(fill = "white", color = NA) 
+  )
+
+# Save the plot
+desktop_path <- "~/Desktop/combined_plot.png"
+ggsave(desktop_path, plot = plot, bg = "white", width = 8, height = 6, dpi = 300)
+
+# Display the plot
+print(plot)
+
+
+```
+
+Above are the plotted results for the combined sample, n=207.
+
+![](images/compare-02.png)
+
+Comparison of replicated and original graph.
+
+### Exploratory analyses
+
+ echo = TRUE, message = FALSE, warning = FALSE}
+#Exploring the effect size for my groups data
+effect_sizes <- eta_squared(anova_results, partial = TRUE)
+print(effect_sizes)
+
+#Condition has the strongest independent effect, explaining 50% of the variance in moral_score.
+#Decision Speed has no meaningful effect on its own.
+#The interaction effect is also strong, explaining 39% of the variance. This supports the idea that the effect of condition changes depending on the level of decision_speed (or vice versa).
+
+
+Above are the effect size results for my individual sample, n=96.
+
+{r echo = TRUE, message = FALSE, warning = FALSE}
+Exploring the effect size for combined data
+effect_sizes_combined <- eta_squared(anova_result_combined, partial = TRUE)
+print(effect_sizes_combined)
+
+Condition has the strongest independent effect, explaining 43% of the variance in moral_score.
+#Decision Speed has no meaningful effect on its own.
+The interaction effect is also strong, explaining 32% of the variance. This supports the idea that the effect of condition changes depending on the level of decision_speed (or vice versa).
+
+
+Above are the effect size results for the combined sample, n=207.
+
+{r echo = TRUE, message = FALSE, warning = FALSE}
+# Interaction plot
+interaction_plot <- ggplot(final_combined, aes(x = condition, y = moral_score, color = decision_speed, group = decision_speed)) +
+  geom_point(size = 4, shape = 21, fill = "white") + 
+  geom_line(linewidth = 1.2) + 
+  scale_color_manual(values = c("darkgrey", "blue")) +
+  labs(
+    title = "Effect of Condition on Moral Evaluation by Decision Speed",
+    x = "Condition",
+    y = "Moral Score",
+    color = "Decision Speed"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 16), 
+    axis.title.x = element_text(size = 14, face = "italic"), 
+    axis.title.y = element_text(size = 14, face = "italic"),
+    axis.text = element_text(size = 12),
+    legend.position = "top",
+    legend.title = element_text(face = "bold"),
+    panel.grid.major = element_line(color = "gray85", size = 0.5) # Subtle gridlines
+  )
+
+interaction_plot
+
+
+
+Above is an interaction plot for the combined sample, n=207
+
+{r echo = TRUE, message = FALSE, warning = FALSE}
+ggplot(final_combined, aes(x = condition, y = moral_score, fill = decision_speed)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c("grey", "blue")) +
+  labs(
+    title = "Moral Scores by Condition and Character",
+    x = "Condition",
+    y = "Moral Score",
+    fill = "Speed"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 16), 
+    axis.title.x = element_text(size = 14, face = "italic"), 
+    axis.title.y = element_text(size = 14, face = "italic"),
+    axis.text = element_text(size = 12),
+    legend.position = "top"
+  )
+
+
+
+
+Above is a box plot for the combined sample, n=207
+
+The statistical test we decided on was replicating experiment 1 which utilizes a two way ANOVA based on what the perceived morals of someone character composite confirmed through the influence of how fast the decision was T-tests . We did this in order to find a comparison of how fast the decision is on both types of decision impacting what the moral character is like T-tests.
 
 A two-way ANOVA was conducted to examine the main effects of decision type (whether participants decided to return or keep the wallet) and decision speed (quick or slow) on the moral character evaluation. This analysis allowed us to assess how these factors independently had an influence on moral judgments.{r} #Two way ANOVA
 
 Convert factors if necessary
 
-final_dataset <- final_dataset %>% mutate( condition = factor(condition, levels = c(“moral”, “immoral”), labels = c(“Returned Wallet”, “Kept Wallet”)), decision_speed = factor(decision_speed, levels = c(“quick”, “slow”), labels = c(“Quick”, “Slow”)) )
+final_dataset \<- final_dataset %\>% mutate( condition = factor(condition, levels = c("moral", "immoral"), labels = c("Returned Wallet", "Kept Wallet")), decision_speed = factor(decision_speed, levels = c("quick", "slow"), labels = c("Quick", "Slow")) )
 
 Perform two-way ANOVA
 
-anova_results <- aov(moral_score ~ condition * decision_speed, data = final_dataset)
+anova_results \<- aov(moral_score \~ condition \* decision_speed, data = final_dataset)
 
 Display the ANOVA table
 
@@ -186,38 +619,45 @@ summary(anova_results)
 
 Check interaction plot
 
-interaction.plot( x.factor = final_datasetdecision_speed, response = final_dataset$moral_score, xlab = “Decision Type (Condition)”, ylab = “Moral Character Evaluation”, trace.label = “Decision Speed”, col = c(“blue”, “red”), type = “b”, pch = c(19, 17),
+interaction.plot( x.factor = final_dataset$condition,
+  trace.factor = final_dataset$decision_speed, response = final_dataset\$moral_score, xlab = "Decision Type (Condition)", ylab = "Moral Character Evaluation", trace.label = "Decision Speed", col = c("blue", "red"), type = "b", pch = c(19, 17),
 
-lwd = 2 ) ```
+lwd = 2 ) \`\`\`
 
-Side-by-side graph with original graph is ideal here
+*Side-by-side graph with original graph is ideal here*
 
 Original
 
-
+![](images/r_project2-01.png)
 
 Our experiment
 
+![](images/r_project.png)
 
+```         
+```
 
 Post data collection addendum
 
-The whole on partiicpants we got were 300 whne puttogehtew ithteh the other two replication groups. This went overthe original sample size of 119, growing the statistical powerThe number of participants we got for the our data was 120 participants. We didn’t expect people to finish our experiment faster than what we posted how long our experiment would take. This became a problem when we had to edit our experiment again because of some missing things and someone was taking it the same time we posted it.
+The whole on partiicpants we got were 300 whne puttogehtew ithteh the other two replication groups. This went overthe original sample size of 119, growing the statistical powerThe number of participants we got for the our data was 120 participants. We didn't expect people to finish our experiment faster than what we posted how long our experiment would take. This became a problem when we had to edit our experiment again because of some missing things and someone was taking it the same time we posted it.
 
 #Unexpected parts
 
 We had a problme with the wording for decions speed measurse when they came up during our times of collecting the data. We addressed this by clarifying the descriptions in the trials that came up and having some attention check to make sure we have quality data
 
-Exploratory analyses
+### Exploratory analyses
+
 To follow up in this study we can improve the scenarios to create an impact for the decision. This is in order to have the speed to be more explicit. We can experiment with a number of scenarios in order to look for broader applicability and nuances.
 
-Discussion
+## Discussion
 
-Summary of Replication Attempt
+### Summary of Replication Attempt
+
 Our experiment was able to replicate since we both saw a lot of change of condition on moral scores. They both demostrated an a significant interaction with speed and condition. We expected our experiment to replicate which it did.
 
 Commentary
 
-The exploratory inghts we found are that the exploratory analsyis ranging with what the original study’s findings but showed a big amount of the lower indpendent result of how quick the decision is. We had the definition of replication with somehwat of a contrast in an mephasis on how fast the decisions is and its effects suggest possible moderators, like thw way we words the scneario orput some diversity in partiicpants, which areable to influence replication results. Differences we saw in the experiment are the role in how fast the decision was. The exact size of the effect were not reported. The original replication graph used different name for their variables like steal and return money rather than ours which moral and immoral condition. Our replication was different also in how it was conducted online rather than in person in the original which was done with the student population from UC Berkeley.
+The exploratory inghts we found are that the exploratory analsyis ranging with what the original study's findings but showed a big amount of the lower indpendent result of how quick the decision is. We had the definition of replication with somehwat of a contrast in an mephasis on how fast the decisions is and its effects suggest possible moderators, like thw way we words the scneario orput some diversity in partiicpants, which areable to influence replication results. Differences we saw in the experiment are the role in how fast the decision was. The exact size of the effect were not reported. The original replication graph used different name for their variables like steal and return money rather than ours which moral and immoral condition. Our replication was different also in how it was conducted online rather than in person in the original which was done with the student population from UC Berkeley.
 
 Caroline Porche: Methodology (lead); software (support); writing - original draft (equal); writing - review and editing (equal); writing - review and editing (equal). Mila Dutton: Software (lead); formal analysis (lead); writing - original draft (equal); writing - review and editing (equal). Anthony Zavala: Methodology (support); Writing - original draft (equal); writing - review and editing (equal).
+
